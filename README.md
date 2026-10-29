@@ -5,7 +5,8 @@ Artėjančių mėgėjų sporto renginių Lietuvoje kalendorius: bėgimas, dvira�
 - `data/renginiai.json` – renginių sąrašas (šaltinis)
 - `events.json` – sugeneruotas failas, kurį svetainė pasiima tiesiogiai iš šios repozitorijos
 - `site/template.html` – puslapis
-- `build.py` – sugeneruoja `events.json`, `dist/sportuok/index.html` ir `dist/sportuok.zip`
+- `build.py` + `site_gen.py` – sugeneruoja `events.json` ir visą statinę svetainę į `public/` (bei `dist/prakaituok.zip`)
+- `deploy.sh` – build + paskelbimas į šaką `hosting` (ją diegia Hostinger)
 - `SAVAITINIS-ATNAUJINIMAS.md` – instrukcija savaitiniam atnaujinimui
 - `PAKEITIMAI.md` – kas ir kada pasikeitė
 

@@ -71,40 +71,24 @@ def main():
     cfg = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
     t = (t.replace("__GADS_ID__", cfg.get("gads_id") or "").replace("__GADS_LABEL__", cfg.get("gads_conversion_label") or "")
           .replace("__ADSENSE_PUB__", cfg.get("adsense_pub") or "").replace('"__GOOGLE_CMP__"', '"true"' if cfg.get("google_cmp") else '"false"'))
-    i = t.index("</style>") + len("</style>")
-    head, body = t[:i], t[i:]
-    doc = f'''<!doctype html>
-<html lang="lt">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Visi artėjantys sporto renginiai Lietuvoje: bėgimas, dviračiai, gravel, MTB, plaukimas, triatlonas ir kt.">
-<meta property="og:title" content="Prakaituok – rask startą">
-<meta property="og:description" content="Rask startą. Užsiregistruok. Prakaituok. Visi artėjantys sporto renginiai Lietuvoje.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F1E26'/%3E%3Ccircle cx='23' cy='22' r='4' fill='%23D8402A'/%3E%3C/svg%3E">
-{head}
-<style>[hidden]{{display:none!important}} body{{margin:0}} img{{max-width:100%}}</style>
-</head>
-<body>
-{body}
-</body>
-</html>
-'''
-    d = os.path.join(ROOT, "dist/sportuok"); os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(doc)
-    shutil.copy(os.path.join(ROOT, "site/SKAITYK.txt"), d)
+    css = re.search(r"<style>(.*?)</style>", t, re.S).group(1)
+    import site_gen
+    out = os.path.join(ROOT, "public")
+    urls = site_gen.build_site(ev, t, css, out, a.updated, cfg, a.owner)
+    site_gen.make_images(out)
     email = cfg.get("contact_email") or ""
     priv = open(os.path.join(ROOT, "site/privatumas.html"), encoding="utf-8").read()
     priv = priv.replace(" Susisiekti: __EMAIL__.", f" Susisiekti: {email}." if email else "").replace("__UPDATED__", a.updated)
-    open(os.path.join(d, "privatumas.html"), "w", encoding="utf-8").write(priv)
-    files = ["index.html", "privatumas.html", "SKAITYK.txt"]
+    open(os.path.join(out, "privatumas.html"), "w", encoding="utf-8").write(priv)
     pub = (cfg.get("adsense_pub") or "").replace("ca-pub-", "pub-")
-    if pub:
-        open(os.path.join(d, "ads.txt"), "w").write(f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n"); files.append("ads.txt")
-    elif os.path.exists(os.path.join(d, "ads.txt")): os.remove(os.path.join(d, "ads.txt"))
+    if pub: open(os.path.join(out, "ads.txt"), "w").write(f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n")
+    os.makedirs(os.path.join(ROOT, "dist"), exist_ok=True)
     z = os.path.join(ROOT, "dist/prakaituok.zip")
     with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED) as zf:
-        for f in files: zf.write(os.path.join(d, f), "prakaituok/" + f)
+        for dp, _, fs in os.walk(out):
+            for f in fs:
+                full = os.path.join(dp, f); zf.write(full, os.path.relpath(full, out))
+    print(f"Puslapių: {len(urls)} (sitemap), failų: {sum(len(fs) for _, _, fs in os.walk(out))}")
     print(f"OK: {len(ev)} renginiai, atnaujinta {a.updated}, owner={a.owner}")
 
 if __name__ == "__main__":

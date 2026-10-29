@@ -28,12 +28,15 @@ repozitorijos pati, todėl į hostingą nieko kelti nereikia.
    - **„preliminari“ renginiui paskelbta tikra data** → pakeisk `date`, `status: "patvirtinta"`, `url` į registraciją, atnaujink `note` ir `source`.
    - **Pasikeitė data, vieta ar distancijos** → pataisyk.
    - Dublikatų nekurk: tas pats renginys tais pačiais metais = vienas įrašas.
-4. Paleisk `python3 build.py --owner <OWNER>`. Jei rodo „ĮSPĖJIMAS“ dėl regiono, pridėk miestą į `REG` sąrašą `build.py`.
-5. Jei pakeitimų nėra, nieko necommitink ir baik.
+4. Paleisk `python3 build.py --owner jokubasmail123-cmd` (patikrinimui). Jei rodo „ĮSPĖJIMAS“ dėl regiono, pridėk miestą į `REG` sąrašą `build.py`.
+5. Jei renginių pakeitimų nėra – vis tiek paleisk `./deploy.sh` (atsinaujina „liko dienų“, praėję renginiai, sitemap datos), bet `main` necommitink.
 6. Jei pakeitimai yra, papildyk `PAKEITIMAI.md` viršuje:
    `## YYYY-MM-DD` ir sąrašas: „+ Naujas: …“, „✓ Patvirtinta data: …“, „~ Pakeista: …“.
 7. Commit ir push į `main` su žinute `Savaitinis atnaujinimas YYYY-MM-DD: +N nauji, M patvirtinti`.
-8. Galutiniame atsakyme lietuviškai trumpai išvardyk pakeitimus.
+8. Paleisk `./deploy.sh` – jis sugeneruoja visą svetainę (`public/`: renginių, sporto šakų, miestų, mėnesių puslapiai,
+   sitemap.xml, llms.txt, .ics) ir paskelbia ją į šaką `hosting`, iš kurios Hostinger automatiškai atnaujina prakaituok.lt.
+9. Patikrink, kad https://raw.githubusercontent.com/jokubasmail123-cmd/sportuok/hosting/sitemap.xml turi šios dienos `lastmod`.
+10. Galutiniame atsakyme lietuviškai trumpai išvardyk pakeitimus.
 
 ## Įrašo formatas (`data/renginiai.json`)
 ```json

@@ -6,11 +6,11 @@
 <style>
 /* Layout: compact header, quick "when" + sport filters, list of event cards grouped by month; calendar as second view */
 :root{
-  --bg:#EDF0F1; --surface:#FFFFFF; --surface-2:#F5F7F7; --ink:#0F1E26; --muted:#5A6B73; --line:#D5DCDF;
+  --bg:#EDF0F1; --surface:#FFFFFF; --surface-2:#F5F7F7; --ink:#0F1E26; --muted:#4F5F66; --line:#D5DCDF;
   --accent:#D8402A; --focus:#1E6FD9; --save:#C9631A;
   --run:#D8402A; --trail:#9A4A1E; --road:#1E5FBF; --gravel:#A9781A; --mtb:#2F7D3A; --cx:#5B6B1F;
   --swim:#0E8AA3; --tri:#6A45B8; --other:#46586A;
-  --tag-bg-mix:14%;
+  --tag-bg-mix:14%; --ink-mix:62%;
   --f:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --r:12px; --tap:44px;
 }
@@ -18,12 +18,12 @@
   --bg:#0D1519; --surface:#152127; --surface-2:#1B2A31; --ink:#E7EEF0; --muted:#93A5AD; --line:#2A3B43;
   --accent:#FF6A4D; --focus:#6FA8FF; --save:#F59A4E;
   --run:#FF7A5E; --trail:#E39363; --road:#6EA2FF; --gravel:#E2B44E; --mtb:#6CC27A; --cx:#B9C65A;
-  --swim:#4CC7DE; --tri:#A98BF0; --other:#9CB0C2; --tag-bg-mix:22%; color-scheme:dark}}
+  --swim:#4CC7DE; --tri:#A98BF0; --other:#9CB0C2; --tag-bg-mix:22%; --ink-mix:100%; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0D1519; --surface:#152127; --surface-2:#1B2A31; --ink:#E7EEF0; --muted:#93A5AD; --line:#2A3B43;
   --accent:#FF6A4D; --focus:#6FA8FF; --save:#F59A4E;
   --run:#FF7A5E; --trail:#E39363; --road:#6EA2FF; --gravel:#E2B44E; --mtb:#6CC27A; --cx:#B9C65A;
-  --swim:#4CC7DE; --tri:#A98BF0; --other:#9CB0C2; --tag-bg-mix:22%; color-scheme:dark}
+  --swim:#4CC7DE; --tri:#A98BF0; --other:#9CB0C2; --tag-bg-mix:22%; --ink-mix:100%; color-scheme:dark}
 *{box-sizing:border-box}
 html,body{background:var(--bg)}
 body{color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.45;
@@ -43,6 +43,12 @@ h1 .dot{color:var(--accent)}
 .slogan{margin:8px 0 0;font-weight:700;font-size:clamp(18px,2.4vw,22px);letter-spacing:-.01em;text-wrap:balance}
 .lede{margin:4px 0 0;color:var(--muted);font-size:15px}
 .stamp{font-size:13px;color:var(--muted);white-space:nowrap}
+.topnav{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;font-size:14px}
+.topnav a{color:var(--ink);font-weight:600;text-decoration:none}
+.topnav a:hover{text-decoration:underline}
+.seolinks{display:grid;gap:6px}
+.seolinks div{display:flex;flex-wrap:wrap;gap:4px 12px}
+.seolinks a{color:var(--muted);display:inline-block;padding:4px 0}
 .hl{display:flex;align-items:center;gap:12px;background:var(--ink);color:var(--bg);border:0;border-radius:var(--r);padding:12px 16px;width:100%;text-align:left;min-height:var(--tap);margin-top:8px}
 .hl .big{font-weight:700;font-size:22px;letter-spacing:-.02em;white-space:nowrap}
 .hl .t{min-width:0;flex:1;line-height:1.3}
@@ -98,15 +104,15 @@ select{min-height:var(--tap);padding:8px 12px;border:1px solid var(--line);borde
 .ev{--c:var(--other);display:grid;grid-template-columns:84px 1fr auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 .ev .bib{background:color-mix(in srgb,var(--c) var(--tag-bg-mix),var(--surface));border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 6px;text-align:center}
 .ev .d{font-weight:700;font-size:36px;line-height:.95;letter-spacing:-.03em;color:var(--c);font-variant-numeric:tabular-nums}
-.ev .d small{display:block;font-weight:500;font-size:12px;margin-top:3px;letter-spacing:0}
+.ev .d small{display:block;font-weight:600;font-size:12px;margin-top:3px;letter-spacing:0;color:color-mix(in srgb,var(--c) var(--ink-mix),var(--ink))}
 .ev .wd{font-size:12.5px;margin-top:4px;color:var(--muted)}
 .ev .body{padding:12px 16px;min-width:0;display:grid;gap:6px;align-content:start}
 .ev .meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:13px;color:var(--muted)}
-.tag{display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:2px 8px;border-radius:4px;background:color-mix(in srgb,var(--c) var(--tag-bg-mix),transparent);color:var(--c)}
+.tag{display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:2px 8px;border-radius:4px;background:color-mix(in srgb,var(--c) var(--tag-bg-mix),transparent);color:color-mix(in srgb,var(--c) var(--ink-mix),var(--ink))}
 .pill{font-size:12px;padding:1px 8px;border-radius:999px;border:1px dashed var(--muted);color:var(--muted)}
 .ev h3{margin:0;font-size:17px;font-weight:700;line-height:1.25;overflow-wrap:anywhere}
-.ev h3 button{all:unset;cursor:pointer}
-.ev h3 button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.ev h3 a{text-decoration:none;color:inherit}
+.ev h3 a:hover{text-decoration:underline;text-underline-offset:3px}
 .dist{display:flex;flex-wrap:wrap;gap:5px}
 .dist span{font-size:12.5px;padding:2px 7px;border:1px solid var(--line);border-radius:4px;background:var(--surface-2);white-space:nowrap}
 .note{font-size:13px;color:var(--muted);margin:0}
@@ -185,7 +191,7 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:v
       <p class="slogan">Rask startą. Užsiregistruok. Prakaituok.</p>
       <p class="lede">Visi artėjantys sporto renginiai Lietuvoje vienoje vietoje.</p>
     </div>
-    <span class="stamp" id="stamp"></span>
+    <nav class="topnav" aria-label="Svetainė"><a href="/apie/">Apie</a><a href="/apie/#prideti">Pridėk renginį</a><span class="stamp" id="stamp"></span></nav>
   </header>
   <div id="hl"></div>
 
@@ -217,12 +223,13 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:v
     </div>
   </div>
 
-  <main id="main"></main>
+  <main id="main"><!--__PRERENDER__--></main>
 
   <footer>
     <div><b>„Data tikslinama“</b> reiškia, kad organizatoriai 2027 m. datos dar nepaskelbė. Rodome tikėtiną datą pagal ankstesnius metus, todėl prieš registruodamasis pasitikrink renginio puslapyje.</div>
     <div><b>Išsaugoti renginiai</b> laikomi tik šioje naršyklėje. Kitame telefone ar kompiuteryje jų nebus.</div>
     <div id="srcnote"></div>
+    <!--__FOOTLINKS__-->
     <div class="flinks"><a href="privatumas.html">Privatumo politika</a><button class="linkbtn" id="ckSettings" type="button" hidden>Slapukų nustatymai</button></div>
   </footer>
 </div>
@@ -384,7 +391,7 @@ function card(e){
     <div class="bib"><div class="d">${a.getDate()}${multi}</div><div class="wd">${WD[a.getDay()]} · ${MON_GEN[a.getMonth()].slice(0,3)}.</div></div>
     <div class="body">
       <div class="meta"><span class="tag">${s.n}</span>${e.status==="preliminari"?`<span class="pill" title="Organizatoriai datos dar nepaskelbė">Data tikslinama</span>`:""}<span>${esc(e.city)}${e.venue?` · ${esc(e.venue)}`:""}</span></div>
-      <h3><button data-open="${e.id}">${esc(e.title)}</button></h3>
+      <h3><a href="/renginiai/${e.id.slice(2)}/" data-open="${e.id}">${esc(e.title)}</a></h3>
       ${(e.distances||[]).length?`<div class="dist">${e.distances.map(d=>`<span>${esc(d)}</span>`).join("")}</div>`:""}
       ${e.note?`<p class="note">${esc(e.note)}</p>`:""}
     </div>
@@ -469,6 +476,7 @@ function openDlg(id,push=true){
     <div class="dlg-f">${e.url?`<a class="btn primary" href="${esc(e.url)}" target="_blank" rel="noopener">${linkLabel(e)} ↗</a>`:""}
       <a class="btn" href="${gcal(e)}" target="_blank" rel="noopener">Į Google kalendorių ↗</a>
       <button class="btn save" data-fav="${e.id}" aria-pressed="${on}">${on?"★ Išsaugota":"☆ Išsaugoti"}</button>
+      <a class="btn" href="/renginiai/${e.id.slice(2)}/">Renginio puslapis</a>
       <button class="btn" data-share="${e.id}">Kopijuoti nuorodą</button></div>`;
   if(!$("dlg").open)$("dlg").showModal();
   if(push&&location.hash!=="#"+id)location.hash=id;
@@ -484,14 +492,14 @@ let tt;function toast(t){const el=$("toast");el.textContent=t;el.hidden=false;cl
 document.addEventListener("click",ev=>{
   const t=ev.target;
   if(t.closest("[data-close]")){closeDlg();return}
-  const sh=t.closest("[data-share]");if(sh){const url=location.href.split("#")[0]+"#"+sh.dataset.share;
+  const sh=t.closest("[data-share]");if(sh){const url=location.origin+"/renginiai/"+sh.dataset.share.slice(2)+"/";
     const done=()=>toast("Nuoroda nukopijuota");
     try{navigator.clipboard.writeText(url).then(done,()=>{toast("Nukopijuok nuorodą iš adreso juostos")})}catch(e){toast("Nukopijuok nuorodą iš adreso juostos")}return}
   const f=t.closest("[data-fav]");if(f){const id=f.dataset.fav;const on=!favs.has(id);on?favs.add(id):favs.delete(id);
     document.querySelectorAll(`[data-fav="${id}"]`).forEach(b=>{b.setAttribute("aria-pressed",on);b.textContent=on?"★ Išsaugota":"☆ Išsaugoti"});
     toast(on?"Išsaugota. Rasi per Filtrai → „Tik išsaugoti“":"Pašalinta iš išsaugotų");
     renderHL();save();if(st.fav&&!$("dlg").open)render();return}
-  const o=t.closest("[data-open]");if(o){openDlg(o.dataset.open);return}
+  const o=t.closest("[data-open]");if(o){if(o.tagName==="A"&&(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button===1))return;ev.preventDefault();openDlg(o.dataset.open);return}
   const d=t.closest("[data-day]");if(d){st.selDay=d.dataset.day;renderCal();return}
   if(t.closest("[data-reset]")){doReset();return}
   const wg=t.closest("[data-when-go]");if(wg){st.when=wg.dataset.whenGo;st.month="";$("month").value="";st.view="list";render();$("summary").scrollIntoView({behavior:"smooth",block:"start"});return}
