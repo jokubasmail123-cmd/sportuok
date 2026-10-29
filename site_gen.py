@@ -36,7 +36,7 @@ SPORT_PAGES = {
  "plaukimas": (["plaukimas"], "Plaukimo varžybos", "Plaukimo varžybos mėgėjams Lietuvoje {y}", "Atviro vandens, žiemos ir baseino plaukimo varžybos mėgėjams ir meistrams Lietuvoje."),
  "baidares": (["baidares"], "Baidarių ir SUP maratonai", "Baidarių ir SUP maratonai Lietuvoje {y}", "Baidarių, kanojų ir SUP maratonai bei irklavimo iššūkiai Lietuvoje."),
  "slidinejimas": (["slidinejimas"], "Slidinėjimo renginiai", "Slidinėjimo maratonai ir riedslidžių varžybos Lietuvoje {y}", "Lygumų slidinėjimo ir riedslidžių varžybos mėgėjams Lietuvoje."),
- "orientavimasis": (["orientavimasis", "nuotykiu"], "Orientavimasis ir nuotykių lenktynės", "Orientavimosi, rogaino ir nuotykių lenktynės Lietuvoje {y}", "Orientavimosi sporto, rogaino ir nuotykių lenktynių renginiai Lietuvoje."),
+ "orientavimasis": (["orientavimasis", "nuotykiu"], "Orientavimosi varžybos ir nuotykių lenktynės", "Orientavimosi, rogaino ir nuotykių lenktynės Lietuvoje {y}", "Orientavimosi sporto, rogaino ir nuotykių lenktynių renginiai Lietuvoje."),
  "kliuciu-ruozas": (["ocr"], "Kliūčių ruožo lenktynės (OCR)", "Kliūčių ruožo (OCR) lenktynės Lietuvoje {y}", "Kliūčių ruožo (OCR) lenktynės Lietuvoje."),
 }
 LOC = {"Vilnius": "Vilniuje", "Kaunas": "Kaune", "Klaipėda": "Klaipėdoje", "Panevėžys": "Panevėžyje", "Šiauliai": "Šiauliuose",
@@ -118,6 +118,17 @@ def list_html(evs, empty="Šiuo metu artėjančių renginių nėra. Užsuk vėli
         parts.append(f'<section class="month"><h2><a href="/kalendorius/{k}/" style="color:inherit;text-decoration:none">{MON_NOM[m-1]}</a><span class="yr">{y}</span>'
                      f'<span class="cnt">{len(g)} {plural(len(g),"renginys","renginiai","renginių")}</span></h2><div class="list">{"".join(card(e) for e in g)}</div></section>')
     return "".join(parts)
+
+def table_html(evs, n=15, cap="Artimiausi renginiai"):
+    if not evs: return ""
+    rows = "".join(f'<tr><td>{date_lt(e, False)}{" <span class=pill>tikslinama</span>" if e["status"]=="preliminari" else ""}</td><td><a href="{ev_url(e)}">{esc(e["title"])}</a></td><td>{esc(e["city"])}</td><td>{esc(", ".join(e.get("distances") or []))}</td></tr>' for e in evs[:n])
+    return f'<div class="tbl"><table><caption>{cap}</caption><thead><tr><th>Data</th><th>Renginys</th><th>Miestas</th><th>Distancijos</th></tr></thead><tbody>{rows}</tbody></table></div>'
+
+def faq_html(faq):
+    return '<section class="faq"><h2>Dažni klausimai</h2>' + "".join(f"<h3>{esc(q)}</h3><p>{esc(a)}</p>" for q, a in faq) + "</section>"
+
+def faq_ld(faq):
+    return {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
 
 FONT = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">'
 ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F1E26'/%3E%3Ccircle cx='23' cy='22' r='4' fill='%23D8402A'/%3E%3C/svg%3E"
@@ -241,6 +252,12 @@ EXTRA_CSS = '''
 .facts dt{color:var(--muted);font-size:14px}.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .cta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
 .faq h2{font-size:22px;margin:28px 0 8px}.faq h3{font-size:17px;margin:16px 0 4px}.faq p{margin:0 0 8px;max-width:72ch}
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.tbl table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+.tbl caption{text-align:left;font-weight:700;padding:12px 14px 4px}
+.tbl th,.tbl td{text-align:left;padding:8px 14px;border-top:1px solid var(--line);vertical-align:top}
+.tbl th{font-size:13px;color:var(--muted);font-weight:600}
+.tbl td:first-child{white-space:nowrap}
 .chips-links{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.chips-links a{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px;text-decoration:none;color:var(--ink)}
 @media (max-width:640px){.facts{grid-template-columns:1fr}.facts dt{margin-top:6px}}
 '''
@@ -315,8 +332,16 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
         if subs: intro += '<div class="chips-links">' + "".join(f'<a href="/{k}/">{SPORT_PAGES[k][1]}</a>' for k in subs) + '</div>'
         il = {"@context": "https://schema.org", "@type": "ItemList", "name": h1, "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "url": SITE + ev_url(e), "name": e["title"]} for i, e in enumerate(l[:50])]}
-        body = list_html(l) + f'<p style="margin-top:18px"><a href="/{s}.ics">Prenumeruoti „{h1}“ kalendorių (.ics)</a></p>'
-        open_mk(out + f"/{s}/").write(page(ttl.format(y=yr) + f" | {BRAND}", desc, f"/{s}/", [("Renginiai", "/"), (h1, f"/{s}/")], f"{h1} {yr}", intro, body, [il], foot, upd_lt))
+        low = (h1[0].lower() + h1[1:]) if h1[1:2].islower() else h1
+        adj = 'artimiausios' if re.search(r'varžybos|lenktynės', h1) else 'artimiausi'
+        biggest = next((e for e in conf if any(x in " ".join(e.get("distances") or []) for x in ("42", "100 km", "70.3", "1,9"))), conf[0] if conf else nxt)
+        cities = Counter(e["city"] for e in l).most_common(3)
+        fq = [(f"Kada vyks {adj} {low.replace(' Lietuvoje','')}?", f"Artimiausias renginys – {nxt['title']}, {date_lt(nxt)} {city_loc(nxt['city'])}." + (f" Po jo – {l[1]['title']} ({date_lt(l[1], False)}, {l[1]['city']})." if len(l) > 1 else "")),
+              (f"Kiek renginių yra kalendoriuje?", f"Šiuo metu – {len(l)} {plural(len(l),'renginys','renginiai','renginių')}, iš jų {len(conf)} su organizatorių patvirtinta data. Daugiausia renginių vyksta: {', '.join(f'{c} ({n})' for c, n in cities)}. Kalendorius atnaujinamas kas savaitę."),
+              ("Kur registruotis?", "Registracija vyksta organizatorių sistemose. Kiekvieno renginio puslapyje yra mygtukas „Registruotis“ arba „Renginio puslapis“, vedantis pas organizatorių, taip pat galima įsidėti renginį į Google kalendorių ar atsisiųsti .ics failą.")]
+        if biggest: fq.insert(1, ("Koks didžiausias artėjantis renginys?", f"{biggest['title']} – {date_lt(biggest, False)} {city_loc(biggest['city'])}" + (f", distancijos: {', '.join(biggest['distances'])}." if biggest.get('distances') else ".")))
+        body = table_html(l) + list_html(l) + faq_html(fq) + f'<p style="margin-top:18px"><a href="/{s}.ics">Prenumeruoti „{h1}“ kalendorių (.ics)</a></p>'
+        open_mk(out + f"/{s}/").write(page(ttl.format(y=yr) + f" | {BRAND}", desc, f"/{s}/", [("Renginiai", "/"), (h1, f"/{s}/")], f"{h1} {yr}", intro, body, [il, faq_ld(fq)], foot, upd_lt))
         open(out + f"/{s}.ics", "w", newline="").write(ics(l, f"{BRAND}: {h1}", upd))
         urls.append((f"/{s}/", "weekly", "0.9"))
 
@@ -328,7 +353,7 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
         intro = f"<p>Artėjantys sporto renginiai {city_loc(c)}: {', '.join(k for k, _ in sp.most_common(5))}. Kalendoriuje – {len(l)} {plural(len(l),'renginys','renginiai','renginių')}.</p>"
         open_mk(out + sl).write(page(f"Sporto renginiai {city_loc(c)} {yr} – bėgimas, dviračiai, triatlonas | {BRAND}",
                                      f"Visi artėjantys sporto renginiai {city_loc(c)}: datos, distancijos ir registracija. {len(l)} renginiai kalendoriuje.",
-                                     sl, [("Renginiai", "/"), (f"Renginiai {city_loc(c)}", sl)], f"Sporto renginiai {city_loc(c)}", intro, list_html(l), [], foot, upd_lt))
+                                     sl, [("Renginiai", "/"), (f"Renginiai {city_loc(c)}", sl)], f"Sporto renginiai {city_loc(c)}", intro, table_html(l, 20, f"Renginiai {city_loc(c)}") + list_html(l), [], foot, upd_lt))
         urls.append((sl, "weekly", "0.7"))
 
     # --- mėnesių puslapiai ---
@@ -343,7 +368,7 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
               (f'<a href="/kalendorius/{months[i+1]}/">{MON_NOM[int(months[i+1][5:])-1]} →</a>' if i + 1 < len(months) else "") + "</div>"
         open_mk(out + sl).write(page(f"Sporto renginiai {y} m. {MON_LOC[m-1]} – bėgimas, dviračiai, triatlonas | {BRAND}",
                                      f"Kokie sporto renginiai vyks Lietuvoje {y} m. {MON_LOC[m-1]}? {len(l)} renginiai: datos, miestai, distancijos ir registracija.",
-                                     sl, [("Renginiai", "/"), (f"{MON_NOM[m-1]} {y}", sl)], f"Sporto renginiai {y} m. {MON_LOC[m-1]}", intro + nav, list_html(l) + nav, [], foot, upd_lt))
+                                     sl, [("Renginiai", "/"), (f"{MON_NOM[m-1]} {y}", sl)], f"Sporto renginiai {y} m. {MON_LOC[m-1]}", intro + nav, table_html(l, 40, f"{MON_NOM[m-1]} {y}: visi renginiai") + list_html(l) + nav, [], foot, upd_lt))
         urls.append((sl, "weekly", "0.7"))
 
     # --- apie + DUK ---
@@ -357,14 +382,13 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
       ("Kaip įsidėti renginius į savo kalendorių?", "Kiekvieną renginį galima įsidėti į Google kalendorių arba atsisiųsti .ics failą. Taip pat galima prenumeruoti visą kalendorių ar atskiros sporto šakos kalendorių (.ics) – jis atsinaujins pats."),
       ("Kaip pridėti savo renginį?", "Parašyk mums el. paštu: renginio pavadinimą, datą, vietą, distancijas ir nuorodą į registraciją. Renginius įtraukiame nemokamai."),
     ]
-    faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
+    apie_ld = faq_ld(faq)
     email = cfg.get("contact_email") or ""
     add = f'<h2 id="prideti">Pridėk renginį</h2><p>Organizuoji sporto renginį Lietuvoje? Atsiųsk pavadinimą, datą, vietą, distancijas ir registracijos nuorodą{": <b>" + esc(email) + "</b>" if email else " – kontaktą rasi netrukus"}. Įtraukiame nemokamai.</p>'
     body = '<div class="faq">' + "".join(f"<h3>{esc(q)}</h3><p>{esc(a)}</p>" for q, a in faq) + add + \
            '<h2>Sporto šakos</h2><div class="chips-links">' + "".join(f'<a href="/{s}/">{SPORT_PAGES[s][1]}</a>' for s in sport_pages) + "</div></div>"
     open_mk(out + "/apie/").write(page(f"Apie {BRAND} – sporto renginių Lietuvoje kalendorius", faq[0][1][:300], "/apie/",
-                                       [("Renginiai", "/"), ("Apie", "/apie/")], f"Apie {BRAND}", f"<p><b>{SLOGAN}</b></p>", body, [faq_ld, org], foot, upd_lt))
+                                       [("Renginiai", "/"), ("Apie", "/apie/")], f"Apie {BRAND}", f"<p><b>{SLOGAN}</b></p>", body, [apie_ld, org], foot, upd_lt))
     urls.append(("/apie/", "monthly", "0.5"))
 
     # --- pagrindinis puslapis ---
