@@ -1,0 +1,11 @@
+Sportuok – sporto renginių kalendorius
+
+Įkėlimas (vieną kartą):
+1. Hostinger → Failų tvarkyklė → public_html → sukurkite aplanką „sportuok“.
+2. Įkelkite į jį index.html.
+3. Puslapis atsidarys adresu jusu-svetaine.lt/sportuok/ (WordPress šio aplanko neliečia).
+
+Atnaujinimai:
+Renginių sąrašą puslapis kiekvieną kartą pasiima iš GitHub (events.json), todėl naujų renginių
+įkelti nereikia – jie atsiranda patys. Jei GitHub nepasiekiamas, rodoma įmontuota kopija.
+index.html iš naujo kelti reikia tik tada, kai keičiasi pats puslapio dizainas ar funkcijos.
