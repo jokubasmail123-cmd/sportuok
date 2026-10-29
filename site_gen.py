@@ -64,6 +64,13 @@ def city_loc(c):
     if c.endswith(" r."): return c[:-3] + " rajone"
     return c
 
+def lc(s): return s if s[1:2].isupper() else s[:1].lower() + s[1:]
+
+def iso_short(e):
+    s = e['date']
+    if e.get('endDate') and e['endDate'] != e['date']: s += '–' + e['endDate'][8:]
+    return s
+
 def plural(n, a, b, c):
     return a if n % 10 == 1 and n % 100 != 11 else b if 2 <= n % 10 <= 9 and not 11 <= n % 100 <= 19 else c
 
@@ -121,7 +128,7 @@ def list_html(evs, empty="Šiuo metu artėjančių renginių nėra. Užsuk vėli
 
 def table_html(evs, n=15, cap="Artimiausi renginiai"):
     if not evs: return ""
-    rows = "".join(f'<tr><td>{date_lt(e, False)}{" <span class=pill>tikslinama</span>" if e["status"]=="preliminari" else ""}</td><td><a href="{ev_url(e)}">{esc(e["title"])}</a></td><td>{esc(e["city"])}</td><td>{esc(", ".join(e.get("distances") or []))}</td></tr>' for e in evs[:n])
+    rows = "".join(f'<tr><td><time datetime="{e["date"]}">{iso_short(e)}</time>{" <span class=pill>tikslinama</span>" if e["status"]=="preliminari" else ""}</td><td><a href="{ev_url(e)}">{esc(e["title"])}</a></td><td>{esc(e["city"])}</td><td>{esc(", ".join(e.get("distances") or []))}</td></tr>' for e in evs[:n])
     return f'<div class="tbl"><table><caption>{cap}</caption><thead><tr><th>Data</th><th>Renginys</th><th>Miestas</th><th>Distancijos</th></tr></thead><tbody>{rows}</tbody></table></div>'
 
 def faq_html(faq):
@@ -348,7 +355,7 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
     # --- miestų puslapiai ---
     for c in city_pages:
         l = [e for e in upcoming if e["city"] == c]
-        sp = Counter(SPORTS[e["sport"]][0].lower() for e in l)
+        sp = Counter(lc(SPORTS[e["sport"]][0]) for e in l)
         sl = "/miestai/" + slug(c) + "/"
         intro = f"<p>Artėjantys sporto renginiai {city_loc(c)}: {', '.join(k for k, _ in sp.most_common(5))}. Kalendoriuje – {len(l)} {plural(len(l),'renginys','renginiai','renginių')}.</p>"
         open_mk(out + sl).write(page(f"Sporto renginiai {city_loc(c)} {yr} – bėgimas, dviračiai, triatlonas | {BRAND}",
@@ -361,7 +368,7 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
         y, m = int(k[:4]), int(k[5:])
         l = [e for e in upcoming if e["date"][:7] == k]
         sl = f"/kalendorius/{k}/"
-        sp = Counter(SPORTS[e["sport"]][0].lower() for e in l)
+        sp = Counter(lc(SPORTS[e["sport"]][0]) for e in l)
         intro = f"<p>{y} m. {MON_LOC[m-1]} Lietuvoje vyks {len(l)} {plural(len(l),'sporto renginys','sporto renginiai','sporto renginių')}: {', '.join(f'{v} – {n}' for v, n in sp.most_common(6))}.</p>"
         i = months.index(k)
         nav = '<div class="chips-links">' + (f'<a href="/kalendorius/{months[i-1]}/">← {MON_NOM[int(months[i-1][5:])-1]}</a>' if i else "") + \
