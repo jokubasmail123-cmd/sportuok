@@ -52,6 +52,17 @@ WD = ["Pr","An","Tr","Kt","Pn","Št","Sk"]
 WD_LONG = ["pirmadienis","antradienis","trečiadienis","ketvirtadienis","penktadienis","šeštadienis","sekmadienis"]
 WD_LOC = ["pirmadienį","antradienį","trečiadienį","ketvirtadienį","penktadienį","šeštadienį","sekmadienį"]
 
+_OG = ["/og.png"]
+OG_JOBS = []
+OG_COL = {"run": "#FF7A5E", "trail": "#E39363", "road": "#6EA2FF", "gravel": "#E2B44E", "mtb": "#6CC27A", "cx": "#B9C65A", "swim": "#4CC7DE", "tri": "#A98BF0", "other": "#9CB0C2"}
+
+def og_set(name, kicker, title, line, chips=(), color="#FF6A4D", badge=""):
+    """Užregistruoja atskirą nuorodos peržiūros paveikslėlį šiam puslapiui."""
+    OG_JOBS.append(dict(name=name, kicker=kicker, title=title, line=line, chips=list(chips)[:5], color=color, badge=badge))
+    _OG[0] = f"/og/{name}.jpg"
+
+def og_reset(): _OG[0] = "/og.png"
+
 esc = lambda s: html.escape(str(s or ""), quote=True)
 D = lambda s: datetime.date.fromisoformat(s)
 
@@ -150,7 +161,7 @@ def head(title, desc, path, jsonld=None, extra=""):
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website"><meta property="og:site_name" content="{BRAND}"><meta property="og:locale" content="lt_LT">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">
-<meta property="og:url" content="{SITE}{path}"><meta property="og:image" content="{SITE}/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="{SITE}{path}"><meta property="og:image" content="{SITE}{_OG[0]}"><meta property="og:image:alt" content="{esc(title)}"><meta name="twitter:image" content="{SITE}{_OG[0]}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0F1E26">
 <link rel="icon" href="{ICON}"><link rel="apple-touch-icon" href="/icon-512.png"><link rel="manifest" href="/manifest.webmanifest">
@@ -205,7 +216,7 @@ def sports_event_ld(e):
          "endDate": e.get("endDate") or e["date"], "eventStatus": "https://schema.org/EventScheduled",
          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
          "location": {"@type": "Place", "name": loc_name, "address": {"@type": "PostalAddress", "addressLocality": e["city"].replace(" r.", " rajonas"), "addressCountry": "LT"}},
-         "image": [SITE + "/og.png"], "url": SITE + ev_url(e), "inLanguage": "lt",
+         "image": [SITE + _OG[0]], "url": SITE + ev_url(e), "inLanguage": "lt",
          "sport": SPORTS[e["sport"]][0],
          "description": (e.get("note") or f"{e['title']} – {SPORTS[e['sport']][0].lower()} renginys {city_loc(e['city'])}.") +
                         (" Distancijos: " + ", ".join(e["distances"]) + "." if e.get("distances") else "")}
@@ -271,6 +282,7 @@ EXTRA_CSS = '''
 
 def build_site(ev, tpl_index, css, out, upd, cfg, owner):
     today = D(upd)
+    OG_JOBS.clear(); og_reset()
     if os.path.exists(out): shutil.rmtree(out)
     os.makedirs(out + "/assets")
     upcoming = [e for e in ev if D(e.get("endDate") or e["date"]) >= today]
@@ -319,10 +331,14 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
         y = e["date"][:4]
         title = f"{e['title']}{'' if y in e['title'] else ' ' + y} – data, distancijos, registracija | {BRAND}"
         desc = event_sentence(e)[:300]
+        og_set("e-" + e["id"][2:], s[0] + (" · " + e["region"] if e.get("region") else ""), e["title"] + ('' if y in e['title'] else f" {y}"),
+               date_lt(e, False) + " · " + e["city"], e.get("distances") or [], OG_COL.get(s[1], "#FF6A4D"),
+               "Data tikslinama" if e["status"] == "preliminari" else ("Registracija atidaryta" if e.get("reg") else ""))
         ld = [sports_event_ld(e)] if e["status"] == "patvirtinta" else []
         intro = f"<p>{esc(event_sentence(e))}</p>"
         open_mk(out + p).write(page(title, desc, p, [("Renginiai", "/"), (SPORT_PAGES[sp_slug][1] if sp_slug else s[0], f"/{sp_slug}/"), (e["title"], p)],
                                      e["title"] + ('' if y in e['title'] else f" {y}"), intro, body, ld, foot, upd_lt))
+        og_reset()
         if e["status"] == "patvirtinta":
             open(out + f"/renginiai/{e['id'][2:]}.ics", "w", newline="").write(ics([e], e["title"], upd))
         urls.append((p, "weekly", "0.6" if past else "0.8"))
@@ -348,7 +364,10 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
               ("Kur registruotis?", "Registracija vyksta organizatorių sistemose. Kiekvieno renginio puslapyje yra mygtukas „Registruotis“ arba „Renginio puslapis“, vedantis pas organizatorių, taip pat galima įsidėti renginį į Google kalendorių ar atsisiųsti .ics failą.")]
         if biggest: fq.insert(1, ("Koks didžiausias artėjantis renginys?", f"{biggest['title']} – {date_lt(biggest, False)} {city_loc(biggest['city'])}" + (f", distancijos: {', '.join(biggest['distances'])}." if biggest.get('distances') else ".")))
         body = table_html(l) + list_html(l) + faq_html(fq) + f'<p style="margin-top:18px"><a href="/{s}.ics">Prenumeruoti „{h1}“ kalendorių (.ics)</a></p>'
+        og_set("s-" + s, "Kalendorius " + yr, h1, f"{len(l)} {plural(len(l),'renginys','renginiai','renginių')} · artimiausias {date_lt(nxt, False)}",
+               sorted({e["city"] for e in l}, key=lambda c: -sum(x["city"] == c for x in l))[:4], OG_COL.get(SPORTS[keys[0]][1], "#FF6A4D"))
         open_mk(out + f"/{s}/").write(page(ttl.format(y=yr) + f" | {BRAND}", desc, f"/{s}/", [("Renginiai", "/"), (h1, f"/{s}/")], f"{h1} {yr}", intro, body, [il, faq_ld(fq)], foot, upd_lt))
+        og_reset()
         open(out + f"/{s}.ics", "w", newline="").write(ics(l, f"{BRAND}: {h1}", upd))
         urls.append((f"/{s}/", "weekly", "0.9"))
 
@@ -358,9 +377,11 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
         sp = Counter(lc(SPORTS[e["sport"]][0]) for e in l)
         sl = "/miestai/" + slug(c) + "/"
         intro = f"<p>Artėjantys sporto renginiai {city_loc(c)}: {', '.join(k for k, _ in sp.most_common(5))}. Kalendoriuje – {len(l)} {plural(len(l),'renginys','renginiai','renginių')}.</p>"
+        og_set("c-" + slug(c), "Kalendorius " + yr, f"Sporto renginiai {city_loc(c)}", f"{len(l)} {plural(len(l),'renginys','renginiai','renginių')} · artimiausias {date_lt(l[0], False)}", [k for k, _ in sp.most_common(4)])
         open_mk(out + sl).write(page(f"Sporto renginiai {city_loc(c)} {yr} – bėgimas, dviračiai, triatlonas | {BRAND}",
                                      f"Visi artėjantys sporto renginiai {city_loc(c)}: datos, distancijos ir registracija. {len(l)} renginiai kalendoriuje.",
                                      sl, [("Renginiai", "/"), (f"Renginiai {city_loc(c)}", sl)], f"Sporto renginiai {city_loc(c)}", intro, table_html(l, 20, f"Renginiai {city_loc(c)}") + list_html(l), [], foot, upd_lt))
+        og_reset()
         urls.append((sl, "weekly", "0.7"))
 
     # --- mėnesių puslapiai ---
@@ -373,9 +394,11 @@ def build_site(ev, tpl_index, css, out, upd, cfg, owner):
         i = months.index(k)
         nav = '<div class="chips-links">' + (f'<a href="/kalendorius/{months[i-1]}/">← {MON_NOM[int(months[i-1][5:])-1]}</a>' if i else "") + \
               (f'<a href="/kalendorius/{months[i+1]}/">{MON_NOM[int(months[i+1][5:])-1]} →</a>' if i + 1 < len(months) else "") + "</div>"
+        og_set("m-" + k, "Mėnesio kalendorius", f"Sporto renginiai {y} m. {MON_LOC[m-1]}", f"{len(l)} {plural(len(l),'renginys','renginiai','renginių')} visoje Lietuvoje", [x for x, _ in sp.most_common(4)])
         open_mk(out + sl).write(page(f"Sporto renginiai {y} m. {MON_LOC[m-1]} – bėgimas, dviračiai, triatlonas | {BRAND}",
                                      f"Kokie sporto renginiai vyks Lietuvoje {y} m. {MON_LOC[m-1]}? {len(l)} renginiai: datos, miestai, distancijos ir registracija.",
                                      sl, [("Renginiai", "/"), (f"{MON_NOM[m-1]} {y}", sl)], f"Sporto renginiai {y} m. {MON_LOC[m-1]}", intro + nav, table_html(l, 40, f"{MON_NOM[m-1]} {y}: visi renginiai") + list_html(l) + nav, [], foot, upd_lt))
+        og_reset()
         urls.append((sl, "weekly", "0.7"))
 
     # --- apie + DUK ---
@@ -512,25 +535,63 @@ def open_mk(path):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     return open(path, "w", encoding="utf-8")
 
+def _font_css():
+    import base64
+    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "site/fonts")
+    css = ""
+    for w in (400, 700):
+        for sub, rng in (("latin", "U+0000-00FF,U+2000-206F,U+20AC"), ("latin-ext", "U+0100-02AF,U+1E00-1EFF")):
+            p = os.path.join(d, f"dm-sans-{sub}-{w}-normal.woff2")
+            if os.path.exists(p):
+                b = base64.b64encode(open(p, "rb").read()).decode()
+                css += f"@font-face{{font-family:DMS;font-weight:{w};src:url(data:font/woff2;base64,{b}) format('woff2');unicode-range:{rng}}}"
+    return css
+
+def _og_html(j, fcss):
+    t = j["title"]; n = len(t)
+    fs = 96 if n <= 22 else 80 if n <= 34 else 66 if n <= 50 else 54
+    chips = "".join(f'<span class="c">{esc(c)}</span>' for c in j["chips"])
+    badge = f'<span class="b">{esc(j["badge"])}</span>' if j["badge"] else ""
+    return f"""<html><head><style>{fcss}
+*{{box-sizing:border-box}}body{{margin:0;width:1200px;height:630px;background:#0F1E26;color:#E7EEF0;font-family:DMS,Arial,sans-serif;position:relative;overflow:hidden}}
+.bar{{position:absolute;left:0;top:0;bottom:0;width:22px;background:{j["color"]}}}
+.glow{{position:absolute;right:-180px;top:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,{j["color"]}33,transparent 65%)}}
+.in{{position:absolute;left:84px;right:80px;top:64px;bottom:58px;display:flex;flex-direction:column}}
+.top{{display:flex;align-items:center;gap:16px;font-size:30px;font-weight:700;letter-spacing:-.5px}}
+.top .k{{font-weight:400;color:{j["color"]};font-size:26px;border:2px solid {j["color"]};border-radius:999px;padding:4px 16px}}
+.dot{{color:#FF6A4D}}
+h1{{font-size:{fs}px;line-height:1.04;letter-spacing:-2px;margin:auto 0 18px;font-weight:700;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}}
+.l{{font-size:36px;font-weight:700;color:#fff}}
+.row{{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;align-items:center}}
+.c{{background:#1B2A31;border:1px solid #2A3B43;border-radius:10px;padding:8px 16px;font-size:26px;color:#cfdade}}
+.b{{background:{j["color"]};color:#0F1E26;border-radius:999px;padding:8px 18px;font-size:24px;font-weight:700}}
+.ft{{display:flex;justify-content:space-between;margin-top:30px;font-size:24px;color:#93A5AD}}
+</style></head><body><div class="bar"></div><div class="glow"></div><div class="in">
+<div class="top"><span>Prakaituok<span class="dot">.</span></span><span class="k">{esc(j["kicker"])}</span></div>
+<h1>{esc(t)}</h1><div class="l">{esc(j["line"])}</div>
+<div class="row">{badge}{chips}</div>
+<div class="ft"><span>Rask startą. Užsiregistruok. Prakaituok.</span><span>prakaituok.lt</span></div></div></body></html>"""
+
 def make_images(out):
-    """OG (1200×630) ir ikonos (512×512) paveikslėliai per Playwright. Jei nepavyksta – praleidžiama."""
+    """Nuorodų peržiūros (OG 1200×630) paveikslėliai kiekvienam puslapiui ir ikona per Playwright."""
     try:
         from playwright.sync_api import sync_playwright
     except Exception as ex:
-        print("ĮSPĖJIMAS: Playwright nėra, OG paveikslėlis nesugeneruotas", ex); return
-    og = f'''<html><body style="margin:0;width:1200px;height:630px;background:#0F1E26;color:#E7EEF0;font-family:'DM Sans',Arial,sans-serif;display:flex;flex-direction:column;justify-content:center;padding:0 90px;box-sizing:border-box">
-<div style="font-size:120px;font-weight:700;letter-spacing:-5px">Prakaituok<span style="color:#FF6A4D">.</span></div>
-<div style="font-size:46px;font-weight:700;margin-top:10px">Rask startą. Užsiregistruok. Prakaituok.</div>
-<div style="font-size:30px;color:#93A5AD;margin-top:26px">Visi sporto renginiai Lietuvoje · prakaituok.lt</div>
-<div style="display:flex;gap:14px;margin-top:40px">{"".join(f'<span style="background:{c};color:#0F1E26;border-radius:999px;padding:10px 22px;font-size:26px;font-weight:700">{n}</span>' for n,c in [("Bėgimas","#FF7A5E"),("Dviračiai","#6EA2FF"),("Gravel","#E2B44E"),("Triatlonas","#A98BF0"),("Plaukimas","#4CC7DE")])}</div></body></html>'''
-    icon = '''<html><body style="margin:0;width:512px;height:512px;background:#0F1E26;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif">
-<div style="font-size:330px;font-weight:700;color:#E7EEF0;letter-spacing:-20px;margin-top:-30px">P<span style="color:#FF6A4D">.</span></div></body></html>'''
+        print("ĮSPĖJIMAS: Playwright nėra, OG paveikslėliai nesugeneruoti", ex); return
+    fcss = _font_css()
+    main = dict(name="og", kicker="Sporto renginiai Lietuvoje", title="Visi sporto renginiai Lietuvoje vienoje vietoje",
+                line="Bėgimas · dviračiai · gravel · triatlonas · plaukimas", chips=[], color="#FF6A4D", badge="Atnaujinama kas savaitę")
+    icon = """<html><body style="margin:0;width:512px;height:512px;background:#0F1E26;display:flex;align-items:center;justify-content:center;font-family:DMS,Arial,sans-serif">
+<style>""" + fcss + """</style><div style="font-size:330px;font-weight:700;color:#E7EEF0;letter-spacing:-20px;margin-top:-30px">P<span style="color:#FF6A4D">.</span></div></body></html>"""
+    os.makedirs(os.path.join(out, "og"), exist_ok=True)
     try:
         with sync_playwright() as p:
-            b = p.chromium.launch()
-            for name, htmls, w, h in [("og.png", og, 1200, 630), ("icon-512.png", icon, 512, 512)]:
-                pg = b.new_page(viewport={"width": w, "height": h}); pg.set_content(htmls); pg.wait_for_timeout(300)
-                pg.screenshot(path=os.path.join(out, name)); pg.close()
-            b.close()
+            b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1200, "height": 630})
+            pg.set_content(_og_html(main, fcss)); pg.wait_for_timeout(150); pg.screenshot(path=os.path.join(out, "og.png"))
+            for j in OG_JOBS:
+                pg.set_content(_og_html(j, fcss)); pg.screenshot(path=os.path.join(out, "og", j["name"] + ".jpg"), type="jpeg", quality=82)
+            pg.close(); ip = b.new_page(viewport={"width": 512, "height": 512}); ip.set_content(icon); ip.wait_for_timeout(100)
+            ip.screenshot(path=os.path.join(out, "icon-512.png")); b.close()
+        print(f"OG paveikslėliai: {len(OG_JOBS) + 1}")
     except Exception as ex:
         print("ĮSPĖJIMAS: paveikslėlių generavimas nepavyko:", ex)
