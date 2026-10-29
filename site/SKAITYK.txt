@@ -1,4 +1,4 @@
-Sportuok – sporto renginių kalendorius
+Prakaituok.lt – sporto renginių kalendorius
 
 Įkėlimas (vieną kartą):
 1. Hostinger → Failų tvarkyklė → public_html → sukurkite aplanką „sportuok“.

@@ -1,4 +1,4 @@
-# Sportuok
+# Prakaituok.lt (repo: sportuok)
 
 Artėjančių mėgėjų sporto renginių Lietuvoje kalendorius: bėgimas, dviračiai, plaukimas, triatlonas ir kt.
 

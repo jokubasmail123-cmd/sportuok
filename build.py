@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sportuok build.
+"""Prakaituok (sportuok) build.
 
 Šaltinis: data/renginiai.json (rankomis / savaitinės užduoties pildomas sąrašas).
 Rezultatai:
@@ -76,8 +76,8 @@ def main():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Visi artėjantys sporto renginiai Lietuvoje: bėgimas, dviračiai, gravel, MTB, plaukimas, triatlonas ir kt.">
-<meta property="og:title" content="Sportuok">
-<meta property="og:description" content="Visi artėjantys sporto renginiai Lietuvoje vienoje vietoje.">
+<meta property="og:title" content="Prakaituok – rask startą">
+<meta property="og:description" content="Rask startą. Užsiregistruok. Prakaituok. Visi artėjantys sporto renginiai Lietuvoje.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F1E26'/%3E%3Ccircle cx='23' cy='22' r='4' fill='%23D8402A'/%3E%3C/svg%3E">
 {head}
 <style>[hidden]{{display:none!important}} body{{margin:0}} img{{max-width:100%}}</style>
