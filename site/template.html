@@ -169,6 +169,11 @@ dialog::backdrop{background:rgba(8,14,18,.55)}
 .x{position:absolute;right:12px;top:12px}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-weight:600;font-size:14px;z-index:20}
 
+footer .flinks{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.consent{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.consent-in{max-width:760px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 10px 40px rgba(0,0,0,.18);padding:14px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.consent-in p{margin:0;flex:1 1 280px;font-size:14px}
+.consent-b{display:flex;gap:8px}
 footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;display:grid;gap:6px}
 @media (prefers-reduced-motion:no-preference){.ev{transition:border-color .15s}.ev:hover{border-color:color-mix(in srgb,var(--c) 60%,var(--line))}}
 </style>
@@ -218,11 +223,44 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:v
     <div><b>„Data tikslinama“</b> reiškia, kad organizatoriai 2027 m. datos dar nepaskelbė. Rodome tikėtiną datą pagal ankstesnius metus, todėl prieš registruodamasis pasitikrink renginio puslapyje.</div>
     <div><b>Išsaugoti renginiai</b> laikomi tik šioje naršyklėje. Kitame telefone ar kompiuteryje jų nebus.</div>
     <div id="srcnote"></div>
+    <div class="flinks"><a href="privatumas.html">Privatumo politika</a><button class="linkbtn" id="ckSettings" type="button" hidden>Slapukų nustatymai</button></div>
   </footer>
 </div>
 
 <dialog id="dlg" aria-labelledby="dlgTitle"></dialog>
 <div class="toast" id="toast" hidden role="status"></div>
+<div class="consent" id="consent" hidden role="dialog" aria-labelledby="ckT">
+  <div class="consent-in">
+    <p id="ckT"><b>Slapukai.</b> Naudojame Google slapukus reklamai ir jos rezultatams matuoti. Pasirink, ar sutinki. <a href="privatumas.html">Plačiau</a></p>
+    <div class="consent-b"><button class="btn" id="ckNo" type="button">Tik būtini</button><button class="btn primary" id="ckYes" type="button">Sutinku</button></div>
+  </div>
+</div>
+<script>
+/* Google Ads + AdSense su Consent Mode v2. ID įrašomi config.json; tušti = nieko nekraunama. */
+window.PK_CFG={gads:"__GADS_ID__",label:"__GADS_LABEL__",pub:"__ADSENSE_PUB__",googleCmp:"__GOOGLE_CMP__"==="true"};
+(function(){
+  const C=window.PK_CFG, has=v=>v&&v.indexOf("__")!==0;
+  window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
+  gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied",wait_for_update:500});
+  const load=src=>{const s=document.createElement("script");s.async=true;s.src=src;s.crossOrigin="anonymous";document.head.appendChild(s)};
+  if(has(C.gads)){load("https://www.googletagmanager.com/gtag/js?id="+C.gads);gtag("js",new Date());gtag("config",C.gads)}
+  if(has(C.pub)){load("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="+C.pub)}
+  if(!has(C.gads)&&!has(C.pub))return;
+  const KEY="pk-consent";let v=null;try{v=localStorage.getItem(KEY)}catch(e){}
+  const apply=ok=>gtag("consent","update",{ad_storage:ok?"granted":"denied",ad_user_data:ok?"granted":"denied",ad_personalization:ok?"granted":"denied",analytics_storage:ok?"granted":"denied"});
+  if(C.googleCmp)return; /* sutikimą valdo Google CMP (AdSense > Privatumas ir pranešimai) */
+  const box=document.getElementById("consent"),set=document.getElementById("ckSettings");set.hidden=false;
+  const choose=ok=>{try{localStorage.setItem(KEY,ok?"yes":"no")}catch(e){};apply(ok);box.hidden=true};
+  if(v)apply(v==="yes");else box.hidden=false;
+  document.getElementById("ckYes").onclick=()=>choose(true);
+  document.getElementById("ckNo").onclick=()=>choose(false);
+  set.onclick=()=>{box.hidden=false};
+  /* konversija: paspaudimas „Registruotis“ / „Renginio puslapis“ */
+  document.addEventListener("click",e=>{const a=e.target.closest("a.btn.primary");if(!a)return;
+    gtag("event","renginio_nuoroda",{link_url:a.href,transport_type:"beacon"});
+    if(has(C.gads)&&has(C.label))gtag("event","conversion",{send_to:C.gads+"/"+C.label,transport_type:"beacon"});},true);
+})();
+</script>
 
 <script>
 // Renginiai imami iš GitHub (atnaujinama kas savaitę). Jei nepavyksta – naudojama įmontuota kopija.

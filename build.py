@@ -68,6 +68,9 @@ def main():
     t = open(os.path.join(ROOT, "site/template.html"), encoding="utf-8").read()
     t = (t.replace("/*__DATA__*/[]", json.dumps(ev, ensure_ascii=False))
           .replace("/*__UPDATED__*/", a.updated).replace("__OWNER__", a.owner))
+    cfg = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
+    t = (t.replace("__GADS_ID__", cfg.get("gads_id") or "").replace("__GADS_LABEL__", cfg.get("gads_conversion_label") or "")
+          .replace("__ADSENSE_PUB__", cfg.get("adsense_pub") or "").replace('"__GOOGLE_CMP__"', '"true"' if cfg.get("google_cmp") else '"false"'))
     i = t.index("</style>") + len("</style>")
     head, body = t[:i], t[i:]
     doc = f'''<!doctype html>
@@ -90,9 +93,18 @@ def main():
     d = os.path.join(ROOT, "dist/sportuok"); os.makedirs(d, exist_ok=True)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(doc)
     shutil.copy(os.path.join(ROOT, "site/SKAITYK.txt"), d)
-    z = os.path.join(ROOT, "dist/sportuok.zip")
+    email = cfg.get("contact_email") or ""
+    priv = open(os.path.join(ROOT, "site/privatumas.html"), encoding="utf-8").read()
+    priv = priv.replace("__EMAIL__", email or "(nurodykite el. paštą config.json)").replace("__UPDATED__", a.updated)
+    open(os.path.join(d, "privatumas.html"), "w", encoding="utf-8").write(priv)
+    files = ["index.html", "privatumas.html", "SKAITYK.txt"]
+    pub = (cfg.get("adsense_pub") or "").replace("ca-pub-", "pub-")
+    if pub:
+        open(os.path.join(d, "ads.txt"), "w").write(f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n"); files.append("ads.txt")
+    elif os.path.exists(os.path.join(d, "ads.txt")): os.remove(os.path.join(d, "ads.txt"))
+    z = os.path.join(ROOT, "dist/prakaituok.zip")
     with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED) as zf:
-        for f in ("index.html", "SKAITYK.txt"): zf.write(os.path.join(d, f), "sportuok/" + f)
+        for f in files: zf.write(os.path.join(d, f), "prakaituok/" + f)
     print(f"OK: {len(ev)} renginiai, atnaujinta {a.updated}, owner={a.owner}")
 
 if __name__ == "__main__":
