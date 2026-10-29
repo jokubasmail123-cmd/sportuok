@@ -95,7 +95,7 @@ def main():
     shutil.copy(os.path.join(ROOT, "site/SKAITYK.txt"), d)
     email = cfg.get("contact_email") or ""
     priv = open(os.path.join(ROOT, "site/privatumas.html"), encoding="utf-8").read()
-    priv = priv.replace("__EMAIL__", email or "(nurodykite el. paštą config.json)").replace("__UPDATED__", a.updated)
+    priv = priv.replace(" Susisiekti: __EMAIL__.", f" Susisiekti: {email}." if email else "").replace("__UPDATED__", a.updated)
     open(os.path.join(d, "privatumas.html"), "w", encoding="utf-8").write(priv)
     files = ["index.html", "privatumas.html", "SKAITYK.txt"]
     pub = (cfg.get("adsense_pub") or "").replace("ca-pub-", "pub-")
