@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Panevėžio maratonas 2026
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-panevezio-maratonas-2026@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Panevėžio maratonas 2026
+LOCATION:Senvagė\, Panevėžys\, Lietuva
+DESCRIPTION:Panevėžio maratonas 2026 vyks 2026 m. lapkričio 7 d. (šeš
+ tadienį) Panevėžyje (Senvagė). Distancijos: 3 km\, 5 km\, 10 km\, 21\
+ ,1 km\, 42\,195 km. https://prakaituok.lt/renginiai/2026-panevezio-marato
+ nas-2026/
+URL:https://prakaituok.lt/renginiai/2026-panevezio-maratonas-2026/
+END:VEVENT
+END:VCALENDAR

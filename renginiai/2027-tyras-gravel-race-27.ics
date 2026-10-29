@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TYRAS Gravel Race '27
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2027-tyras-gravel-race-27@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+SUMMARY:TYRAS Gravel Race '27
+LOCATION:Molėtai\, Lietuva
+DESCRIPTION:TYRAS Gravel Race '27 vyks 2027 m. birželio 5 d. (šeštadien
+ į) Molėtuose. https://prakaituok.lt/renginiai/2027-tyras-gravel-race-27
+ /
+URL:https://prakaituok.lt/renginiai/2027-tyras-gravel-race-27/
+END:VEVENT
+END:VCALENDAR

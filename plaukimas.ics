@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Prakaituok: Plaukimo varžybos
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-atviras-lietuvos-meistru-plaukimo-cempionat@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Atviras Lietuvos meistrų plaukimo čempionatas (25 m baseine) 202
+ 6
+LOCATION:Baseinas „Šilainiai“\, Baltų pr. 8\, Kaunas\, Lietuva
+DESCRIPTION:Atviras Lietuvos meistrų plaukimo čempionatas (25 m baseine)
+  2026 vyks 2026 m. lapkričio 21 d. (šeštadienį) Kaune (Baseinas „Š
+ ilainiai“\, Baltų pr. 8). Distancijos: 50–200 m rungtys\, 4×50 m es
+ tafetės. https://prakaituok.lt/renginiai/2026-atviras-lietuvos-meistru-p
+ laukimo-cempionat/
+URL:https://prakaituok.lt/renginiai/2026-atviras-lietuvos-meistru-plaukimo
+ -cempionat/
+END:VEVENT
+END:VCALENDAR

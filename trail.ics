@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Prakaituok: Trail bėgimo varžybos
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-trailo-kalve-ziemos-sezono-atidarymas@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Trailo Kalvė – žiemos sezono atidarymas
+LOCATION:Kleboniškio miško parkas\, Kaunas\, Lietuva
+DESCRIPTION:Trailo Kalvė – žiemos sezono atidarymas vyks 2026 m. lapkr
+ ičio 7 d. (šeštadienį) Kaune (Kleboniškio miško parkas). Distancijo
+ s: Žalvarinė\, Plieninė ~23 km\, Titaninė ~30 km. https://prakaituok.
+ lt/renginiai/2026-trailo-kalve-ziemos-sezono-atidarymas/
+URL:https://prakaituok.lt/renginiai/2026-trailo-kalve-ziemos-sezono-atidar
+ ymas/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-vilnius-trail-run@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Vilnius Trail Run
+LOCATION:Kalnų parkas\, Vilnius\, Lietuva
+DESCRIPTION:Vilnius Trail Run vyks 2027 m. gegužės 1 d. (šeštadienį) 
+ Vilniuje (Kalnų parkas). Distancijos: 2 km\, 4 km\, 15 km\, 21 km\, 42 k
+ m\, 70 km\, 108 km. https://prakaituok.lt/renginiai/2027-vilnius-trail-ru
+ n/
+URL:https://prakaituok.lt/renginiai/2027-vilnius-trail-run/
+END:VEVENT
+END:VCALENDAR

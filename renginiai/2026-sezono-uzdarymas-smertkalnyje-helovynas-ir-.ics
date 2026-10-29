@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sezono uždarymas Smertkalnyje – Helovynas ir varžybos
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-sezono-uzdarymas-smertkalnyje-helovynas-ir-@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261102
+SUMMARY:Sezono uždarymas Smertkalnyje – Helovynas ir varžybos
+LOCATION:Smertkalnis\, Vaistariškiai\, Kauno r.\, Lietuva
+DESCRIPTION:Sezono uždarymas Smertkalnyje – Helovynas ir varžybos vyks
+  2026 m. spalio 31 d. – lapkričio 1 d. (šeštadienį) Kauno rajone (S
+ mertkalnis\, Vaistariškiai). Distancijos: Gravity / šuoliai. https://pr
+ akaituok.lt/renginiai/2026-sezono-uzdarymas-smertkalnyje-helovynas-ir-/
+URL:https://prakaituok.lt/renginiai/2026-sezono-uzdarymas-smertkalnyje-hel
+ ovynas-ir-/
+END:VEVENT
+END:VCALENDAR

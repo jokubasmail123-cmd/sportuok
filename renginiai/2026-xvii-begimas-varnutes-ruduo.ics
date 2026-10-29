@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:XVII bėgimas „Varnutės ruduo“
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-xvii-begimas-varnutes-ruduo@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:XVII bėgimas „Varnutės ruduo“
+LOCATION:Jonavos sporto arena\, Jonava\, Lietuva
+DESCRIPTION:XVII bėgimas „Varnutės ruduo“ vyks 2026 m. lapkričio 7 
+ d. (šeštadienį) Jonavoje (Jonavos sporto arena). Distancijos: 300 m\, 
+ 3\,2 km\, 10 km. https://prakaituok.lt/renginiai/2026-xvii-begimas-varnut
+ es-ruduo/
+URL:https://prakaituok.lt/renginiai/2026-xvii-begimas-varnutes-ruduo/
+END:VEVENT
+END:VCALENDAR

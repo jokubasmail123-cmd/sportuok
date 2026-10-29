@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Vilnius 700 Ultra
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-vilnius-700-ultra@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Vilnius 700 Ultra
+LOCATION:Vingio parkas\, Vilnius\, Lietuva
+DESCRIPTION:Vilnius 700 Ultra vyks 2026 m. lapkričio 8 d. (sekmadienį) V
+ ilniuje (Vingio parkas). Distancijos: 10 km\, 7×10 km estafetė\, 70 km.
+  https://prakaituok.lt/renginiai/2026-vilnius-700-ultra/
+URL:https://prakaituok.lt/renginiai/2026-vilnius-700-ultra/
+END:VEVENT
+END:VCALENDAR

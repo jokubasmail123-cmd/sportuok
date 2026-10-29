@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lėčiausias Europos maratonas
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-leciausias-europos-maratonas@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261214
+SUMMARY:Lėčiausias Europos maratonas
+LOCATION:Senamiestis\, Vilnius\, Lietuva
+DESCRIPTION:Lėčiausias Europos maratonas vyks 2026 m. gruodžio 12–13 
+ d. (šeštadienį) Vilniuje (Senamiestis). Distancijos: 3 km\, 10 km\, 21
+  km\, 42\,195 km. https://prakaituok.lt/renginiai/2026-leciausias-europos
+ -maratonas/
+URL:https://prakaituok.lt/renginiai/2026-leciausias-europos-maratonas/
+END:VEVENT
+END:VCALENDAR

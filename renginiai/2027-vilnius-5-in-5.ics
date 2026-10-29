@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VILNIUS 5 in 5
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2027-vilnius-5-in-5@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270607
+SUMMARY:VILNIUS 5 in 5
+LOCATION:Vingio parkas\, Vilnius\, Lietuva
+DESCRIPTION:VILNIUS 5 in 5 vyks 2027 m. birželio 2–6 d. (trečiadienį)
+  Vilniuje (Vingio parkas). Distancijos: 5×4\,2 km\, 5×12\,6 km\, 5×21\
+ ,1 km\, 5×42\,2 km. https://prakaituok.lt/renginiai/2027-vilnius-5-in-5/
+URL:https://prakaituok.lt/renginiai/2027-vilnius-5-in-5/
+END:VEVENT
+END:VCALENDAR

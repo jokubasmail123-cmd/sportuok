@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dipolio iššūkis 2026
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-dipolio-issukis-2026@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:Dipolio iššūkis 2026
+LOCATION:Startas prie Baltojo tilto\, finišas Kaune\, Vilnius\, Lietuva
+DESCRIPTION:Dipolio iššūkis 2026 vyks 2026 m. lapkričio 6–7 d. (penk
+ tadienį) Vilniuje (Startas prie Baltojo tilto\, finišas Kaune). Distanc
+ ijos: 230 km\, 170 km\, 75 km\, 60 km. https://prakaituok.lt/renginiai/20
+ 26-dipolio-issukis-2026/
+URL:https://prakaituok.lt/renginiai/2026-dipolio-issukis-2026/
+END:VEVENT
+END:VCALENDAR

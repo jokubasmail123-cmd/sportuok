@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Vilniaus vaikų iššūkis (patalpose)
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-vilniaus-vaiku-issukis-patalpose@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Vilniaus vaikų iššūkis (patalpose)
+LOCATION:Vilnius\, Lietuva
+DESCRIPTION:Vilniaus vaikų iššūkis (patalpose) vyks 2026 m. lapkričio
+  8 d. (sekmadienį) Vilniuje. Distancijos: Vaikams. https://prakaituok.lt
+ /renginiai/2026-vilniaus-vaiku-issukis-patalpose/
+URL:https://prakaituok.lt/renginiai/2026-vilniaus-vaiku-issukis-patalpose/
+END:VEVENT
+END:VCALENDAR

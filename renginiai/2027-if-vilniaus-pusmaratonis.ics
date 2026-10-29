@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:„If“ Vilniaus pusmaratonis
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2027-if-vilniaus-pusmaratonis@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+SUMMARY:„If“ Vilniaus pusmaratonis
+LOCATION:Vilnius\, Lietuva
+DESCRIPTION:„If“ Vilniaus pusmaratonis vyks 2027 m. gegužės 22 d. (
+ šeštadienį) Vilniuje. Distancijos: Vaikų\, 5 km\, 10 km\, 21\,1 km. h
+ ttps://prakaituok.lt/renginiai/2027-if-vilniaus-pusmaratonis/
+URL:https://prakaituok.lt/renginiai/2027-if-vilniaus-pusmaratonis/
+END:VEVENT
+END:VCALENDAR

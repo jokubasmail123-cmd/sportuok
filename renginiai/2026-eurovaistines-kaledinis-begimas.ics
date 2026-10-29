@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Eurovaistinės Kalėdinis bėgimas
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-eurovaistines-kaledinis-begimas@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Eurovaistinės Kalėdinis bėgimas
+LOCATION:Senamiestis\, Vilnius\, Lietuva
+DESCRIPTION:Eurovaistinės Kalėdinis bėgimas vyks 2026 m. gruodžio 5 d.
+  (šeštadienį) Vilniuje (Senamiestis). Distancijos: Nykštukų bėgimas
+ \, 3 km\, 6 km\, 12 km. https://prakaituok.lt/renginiai/2026-eurovaistine
+ s-kaledinis-begimas/
+URL:https://prakaituok.lt/renginiai/2026-eurovaistines-kaledinis-begimas/
+END:VEVENT
+END:VCALENDAR

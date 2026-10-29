@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Prakaituok: Plento dviračių renginiai
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2027-labdaringas-moteru-vaziavimas@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+SUMMARY:Labdaringas moterų važiavimas
+LOCATION:Vilnius\, Lietuva
+DESCRIPTION:Labdaringas moterų važiavimas vyks 2027 m. rugsėjo 11 d. (
+ šeštadienį) Vilniuje. https://prakaituok.lt/renginiai/2027-labdaringas
+ -moteru-vaziavimas/
+URL:https://prakaituok.lt/renginiai/2027-labdaringas-moteru-vaziavimas/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Vilnius Rogaining 2026
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-vilnius-rogaining-2026@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Vilnius Rogaining 2026
+LOCATION:Baltasis tiltas\, Vilnius\, Lietuva
+DESCRIPTION:Vilnius Rogaining 2026 vyks 2026 m. lapkričio 14 d. (šeštad
+ ienį) Vilniuje (Baltasis tiltas). Distancijos: 2 val.\, 4 val.. https://
+ prakaituok.lt/renginiai/2026-vilnius-rogaining-2026/
+URL:https://prakaituok.lt/renginiai/2026-vilnius-rogaining-2026/
+END:VEVENT
+END:VCALENDAR

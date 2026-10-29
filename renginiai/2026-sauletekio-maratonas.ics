@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Saulėtekio maratonas
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-sauletekio-maratonas@prakaituok.lt
+DTSTAMP:20261029T202138Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Saulėtekio maratonas
+LOCATION:VILNIUS TECH sporto kompleksas\, Vilnius\, Lietuva
+DESCRIPTION:Saulėtekio maratonas vyks 2026 m. lapkričio 29 d. (sekmadien
+ į) Vilniuje (VILNIUS TECH sporto kompleksas). Distancijos: 600 m\, 42\,1
+ 95 km. https://prakaituok.lt/renginiai/2026-sauletekio-maratonas/
+URL:https://prakaituok.lt/renginiai/2026-sauletekio-maratonas/
+END:VEVENT
+END:VCALENDAR
