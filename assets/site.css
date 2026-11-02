@@ -187,5 +187,11 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:v
 .facts dt{color:var(--muted);font-size:14px}.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .cta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
 .faq h2{font-size:22px;margin:28px 0 8px}.faq h3{font-size:17px;margin:16px 0 4px}.faq p{margin:0 0 8px;max-width:72ch}
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.tbl table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+.tbl caption{text-align:left;font-weight:700;padding:12px 14px 4px}
+.tbl th,.tbl td{text-align:left;padding:8px 14px;border-top:1px solid var(--line);vertical-align:top}
+.tbl th{font-size:13px;color:var(--muted);font-weight:600}
+.tbl td:first-child{white-space:nowrap}
 .chips-links{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.chips-links a{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px;text-decoration:none;color:var(--ink)}
 @media (max-width:640px){.facts{grid-template-columns:1fr}.facts dt{margin-top:6px}}

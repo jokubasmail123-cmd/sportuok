@@ -1,7 +1,4 @@
-# Prakaituok: artėjantys sporto renginiai Lietuvoje (atnaujinta 2026-10-29)
-
-## Spalis 2026
-- 2026 m. spalio 31 d. – lapkričio 1 d. (šeštadienis) – Sezono uždarymas Smertkalnyje – Helovynas ir varžybos (MTB, Kauno r.). Distancijos: Gravity / šuoliai. https://prakaituok.lt/renginiai/2026-sezono-uzdarymas-smertkalnyje-helovynas-ir-/
+# Prakaituok: artėjantys sporto renginiai Lietuvoje (atnaujinta 2026-11-02)
 
 ## Lapkritis 2026
 - 2026 m. lapkričio 6–7 d. (penktadienis) – Dipolio iššūkis 2026 (Baidarės / SUP, Vilnius). Distancijos: 230 km, 170 km, 75 km, 60 km. https://prakaituok.lt/renginiai/2026-dipolio-issukis-2026/
@@ -10,15 +7,18 @@
 - 2026 m. lapkričio 7 d. (šeštadienis) – XVII bėgimas „Varnutės ruduo“ (Bėgimas, Jonava). Distancijos: 300 m, 3,2 km, 10 km. https://prakaituok.lt/renginiai/2026-xvii-begimas-varnutes-ruduo/
 - 2026 m. lapkričio 8 d. (sekmadienis) – Vilniaus vaikų iššūkis (patalpose) (Nuotykių lenktynės, Vilnius). Distancijos: Vaikams. https://prakaituok.lt/renginiai/2026-vilniaus-vaiku-issukis-patalpose/
 - 2026 m. lapkričio 8 d. (sekmadienis) – Vilnius 700 Ultra (Ultra, Vilnius). Distancijos: 10 km, 7×10 km estafetė, 70 km. https://prakaituok.lt/renginiai/2026-vilnius-700-ultra/
+- 2026 m. lapkričio 12 d. (ketvirtadienis) – XXV tradicinis bėgimas dr. Jonui Basanavičiui atminti (Bėgimas, Vilkaviškio r.). Distancijos: 5,9 km. https://prakaituok.lt/renginiai/2026-xxv-tradicinis-begimas-dr-jonui-basanaviciu/
 - 2026 m. lapkričio 14 d. (šeštadienis) – Vilnius Rogaining 2026 (Orientavimasis, Vilnius). Distancijos: 2 val., 4 val.. https://prakaituok.lt/renginiai/2026-vilnius-rogaining-2026/
 - 2026 m. lapkričio 15 d. (sekmadienis) – Bėgimas Lietuvos kariuomenės dienai paminėti (Bėgimas, Tauragė) – DATA TIKSLINAMA. Distancijos: 0,6 km, 6 km, 12 km. https://prakaituok.lt/renginiai/2026-begimas-lietuvos-kariuomenes-dienai-paminet/
 - 2026 m. lapkričio 21 d. (šeštadienis) – Atviras Lietuvos meistrų plaukimo čempionatas (25 m baseine) 2026 (Plaukimas, Kaunas). Distancijos: 50–200 m rungtys, 4×50 m estafetės. https://prakaituok.lt/renginiai/2026-atviras-lietuvos-meistru-plaukimo-cempionat/
 - 2026 m. lapkričio 21 d. (šeštadienis) – VC TRAIL 2026 – finalinis etapas (Nuotykių lenktynės, Vilnius). Distancijos: ~15–20 km, ~25–30 km, ~45–50 km. https://prakaituok.lt/renginiai/2026-vc-trail-2026-finalinis-etapas/
-- 2026 m. lapkričio 29 d. (sekmadienis) – Saulėtekio maratonas (Bėgimas, Vilnius). Distancijos: 600 m, 42,195 km. https://prakaituok.lt/renginiai/2026-sauletekio-maratonas/
+- 2026 m. lapkričio 29 d. (sekmadienis) – VIII Saulėtekio maratonas (Bėgimas, Vilnius). Distancijos: 600 m, 4,2 km, 12,6 km, 21,1 km, 42,195 km. https://prakaituok.lt/renginiai/2026-viii-sauletekio-maratonas/
 
 ## Gruodis 2026
 - 2026 m. gruodžio 5 d. (šeštadienis) – Eurovaistinės Kalėdinis bėgimas (Bėgimas, Vilnius). Distancijos: Nykštukų bėgimas, 3 km, 6 km, 12 km. https://prakaituok.lt/renginiai/2026-eurovaistines-kaledinis-begimas/
 - 2026 m. gruodžio 12–13 d. (šeštadienis) – Lėčiausias Europos maratonas (Bėgimas, Vilnius). Distancijos: 3 km, 10 km, 21 km, 42,195 km. https://prakaituok.lt/renginiai/2026-leciausias-europos-maratonas/
+- 2026 m. gruodžio 19 d. (šeštadienis) – Kauno „Kalėdinis bėgimas“ 2026 (Bėgimas, Kaunas). Distancijos: 1,7 km, 5 km, 10 km. https://prakaituok.lt/renginiai/2026-kauno-kaledinis-begimas-2026/
+- 2026 m. gruodžio 27 d. (sekmadienis) – Trakų Kalėdinis bėgimas 2026 (Bėgimas, Trakai). Distancijos: 1 km, 4,5 km, 9 km, 13,5 km. https://prakaituok.lt/renginiai/2026-traku-kaledinis-begimas-2026/
 
 ## Sausis 2027
 - 2027 m. sausio 9 d. (šeštadienis) – Gyvybės ir mirties keliu – pagarbos bėgimas (Bėgimas, Vilnius) – DATA TIKSLINAMA. Distancijos: ~10 km. https://prakaituok.lt/renginiai/2027-gyvybes-ir-mirties-keliu-pagarbos-begimas/
@@ -65,6 +65,7 @@
 - 2027 m. birželio 2–6 d. (trečiadienis) – VILNIUS 5 in 5 (Ultra, Vilnius). Distancijos: 5×4,2 km, 5×12,6 km, 5×21,1 km, 5×42,2 km. https://prakaituok.lt/renginiai/2027-vilnius-5-in-5/
 - 2027 m. birželio 5 d. (šeštadienis) – Merkio maratonas (Baidarės / SUP, Varėnos r.) – DATA TIKSLINAMA. Distancijos: 32 km. https://prakaituok.lt/renginiai/2027-merkio-maratonas/
 - 2027 m. birželio 5 d. (šeštadienis) – TYRAS Gravel Race '27 (Gravel, Molėtai). https://prakaituok.lt/renginiai/2027-tyras-gravel-race-27/
+- 2027 m. birželio 5 d. (šeštadienis) – Vilnius 5000 2027 (Bėgimas, Vilnius). Distancijos: 5 km. https://prakaituok.lt/renginiai/2027-vilnius-5000-2027/
 - 2027 m. birželio 12 d. (šeštadienis) – GRUNTO #1 – Lietuvos gravel čempionatas (Gravel, Alytaus r.) – DATA TIKSLINAMA. Distancijos: 140 km, 100 km, 50 km. https://prakaituok.lt/renginiai/2027-grunto-1-lietuvos-gravel-cempionatas/
 - 2027 m. birželio 13 d. (sekmadienis) – Alytaus maratonas (Bėgimas, Alytus) – DATA TIKSLINAMA. Distancijos: 5,3 km, 10,6 km, 21,1 km, 42,195 km. https://prakaituok.lt/renginiai/2027-alytaus-maratonas/
 - 2027 m. birželio 13 d. (sekmadienis) – Dviračių maratonų taurė – I etapas (MTB, Druskininkai) – DATA TIKSLINAMA. Distancijos: MTB 23 / 46 / 69 km, Gravel 83 km. https://prakaituok.lt/renginiai/2027-dviraciu-maratonu-taure-i-etapas/
@@ -101,6 +102,7 @@
 - 2027 m. rugpjūčio 22 d. (sekmadienis) – Molėtų triatlonas (Triatlonas, Molėtai) – DATA TIKSLINAMA. Distancijos: 1,5 / 40 / 10 km, 750 m / 20 / 5 km, TRI-FUN, Vaikų TRI. https://prakaituok.lt/renginiai/2027-moletu-triatlonas/
 - 2027 m. rugpjūčio 22 d. (sekmadienis) – Velomaratonas (Plentas, Vilnius) – DATA TIKSLINAMA. Distancijos: Sporto, Mėgėjų, Vaikų. https://prakaituok.lt/renginiai/2027-velomaratonas/
 - 2027 m. rugpjūčio 28 d. (šeštadienis) – Lietuvos atviro vandens plaukimo čempionatas (Plaukimas, Vilnius) – DATA TIKSLINAMA. Distancijos: 5 km, 10 km. https://prakaituok.lt/renginiai/2027-lietuvos-atviro-vandens-plaukimo-cempionata/
+- 2027 m. rugpjūčio 28 d. (šeštadienis) – TEMPLE Kauno pusmaratonis 2027 (Bėgimas, Kaunas). Distancijos: 400 m, 5 km, 10 km, 21,1 km. https://prakaituok.lt/renginiai/2027-temple-kauno-pusmaratonis-2027/
 - 2027 m. rugpjūčio 28 d. (šeštadienis) – Utenos velomaratonas (Plentas, Utena) – DATA TIKSLINAMA. https://prakaituok.lt/renginiai/2027-utenos-velomaratonas/
 
 ## Rugsėjis 2027
@@ -113,12 +115,13 @@
 - 2027 m. rugsėjo 25 d. (šeštadienis) – LTU riedslidžių taurė – III etapas (Slidinėjimas, Ignalina) – DATA TIKSLINAMA. Distancijos: Sprintas F. https://prakaituok.lt/renginiai/2027-ltu-riedslidziu-taure-iii-etapas/
 - 2027 m. rugsėjo 26 d. (sekmadienis) – Dviračių maratonų taurė – III etapas (finalas) (MTB, Vilnius) – DATA TIKSLINAMA. Distancijos: 22 / 44 / 66 km, Gravel, Vaikų. https://prakaituok.lt/renginiai/2027-dviraciu-maratonu-taure-iii-etapas-finalas/
 - 2027 m. rugsėjo 26 d. (sekmadienis) – Elektrėnų Gran Fondo (Plentas, Elektrėnai) – DATA TIKSLINAMA. https://prakaituok.lt/renginiai/2027-elektrenu-gran-fondo/
+- 2027 m. rugsėjo 26 d. (sekmadienis) – Vertical Vilnius 2027 (Trail, Vilnius). Distancijos: 2 km (200 m D+), 6 km (600 m D+), 10 km (1000 m D+). https://prakaituok.lt/renginiai/2027-vertical-vilnius-2027/
 
 ## Spalis 2027
 - 2027 m. spalio 2 d. (šeštadienis) – Utenos hipodromo maratonas (Bėgimas, Utena) – DATA TIKSLINAMA. Distancijos: 3 km, 5 km, 10 km, 21,1 km, 42,2 km. https://prakaituok.lt/renginiai/2027-utenos-hipodromo-maratonas/
 - 2027 m. spalio 9 d. (šeštadienis) – GIFNova gravelonas (Gravel, Kazlų Rūdos sav.) – DATA TIKSLINAMA. Distancijos: 100 km, 80 km, 60 km, 40 km. https://prakaituok.lt/renginiai/2027-gifnova-gravelonas/
 - 2027 m. spalio 9 d. (šeštadienis) – LTU riedslidžių taurė – IV etapas (Slidinėjimas, Anykščiai) – DATA TIKSLINAMA. Distancijos: Distancija F. https://prakaituok.lt/renginiai/2027-ltu-riedslidziu-taure-iv-etapas/
-- 2027 m. spalio 16 d. (šeštadienis) – Trail Kuršių nerija (Trail, Neringa) – DATA TIKSLINAMA. Distancijos: 10 km, 21 km, 30 km, 42 km, 50 km, 70 km, 104 km. https://prakaituok.lt/renginiai/2027-trail-kursiu-nerija/
+- 2027 m. spalio 16 d. (šeštadienis) – Trail Kuršių nerija (Trail, Klaipėda). Distancijos: 1 km, 10 km, 21 km, 30 km, 42 km, 50 km, 70 km, 104 km. https://prakaituok.lt/renginiai/2027-trail-kursiu-nerija/
 - 2027 m. spalio 16–17 d. (šeštadienis) – VeloCX International CX Race (Cyclocross, Vilnius) – DATA TIKSLINAMA. Distancijos: UCI C2, Mėgėjų, Vaikų. https://prakaituok.lt/renginiai/2027-velocx-international-cx-race/
 
 ## Lapkritis 2027

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Vertical Vilnius 2027
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2027-vertical-vilnius-2027@prakaituok.lt
+DTSTAMP:20261102T182744Z
+DTSTART;VALUE=DATE:20270926
+DTEND;VALUE=DATE:20270927
+SUMMARY:Vertical Vilnius 2027
+LOCATION:Liepkalnis\, Vilnius\, Lietuva
+DESCRIPTION:Vertical Vilnius 2027 vyks 2027 m. rugsėjo 26 d. (sekmadienį
+ ) Vilniuje (Liepkalnis). Distancijos: 2 km (200 m D+)\, 6 km (600 m D+)\,
+  10 km (1000 m D+). https://prakaituok.lt/renginiai/2027-vertical-vilnius
+ -2027/
+URL:https://prakaituok.lt/renginiai/2027-vertical-vilnius-2027/
+END:VEVENT
+END:VCALENDAR

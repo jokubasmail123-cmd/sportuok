@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TEMPLE Kauno pusmaratonis 2027
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2027-temple-kauno-pusmaratonis-2027@prakaituok.lt
+DTSTAMP:20261102T182744Z
+DTSTART;VALUE=DATE:20270828
+DTEND;VALUE=DATE:20270829
+SUMMARY:TEMPLE Kauno pusmaratonis 2027
+LOCATION:Nemuno sala\, Kaunas\, Lietuva
+DESCRIPTION:TEMPLE Kauno pusmaratonis 2027 vyks 2027 m. rugpjūčio 28 d. 
+ (šeštadienį) Kaune (Nemuno sala). Distancijos: 400 m\, 5 km\, 10 km\, 
+ 21\,1 km. https://prakaituok.lt/renginiai/2027-temple-kauno-pusmaratonis-
+ 2027/
+URL:https://prakaituok.lt/renginiai/2027-temple-kauno-pusmaratonis-2027/
+END:VEVENT
+END:VCALENDAR

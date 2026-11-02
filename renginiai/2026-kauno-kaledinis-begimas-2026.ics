@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kauno „Kalėdinis bėgimas“ 2026
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-kauno-kaledinis-begimas-2026@prakaituok.lt
+DTSTAMP:20261102T182744Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Kauno „Kalėdinis bėgimas“ 2026
+LOCATION:Kaunas\, Lietuva
+DESCRIPTION:Kauno „Kalėdinis bėgimas“ 2026 vyks 2026 m. gruodžio 19
+  d. (šeštadienį) Kaune. Distancijos: 1\,7 km\, 5 km\, 10 km. https://p
+ rakaituok.lt/renginiai/2026-kauno-kaledinis-begimas-2026/
+URL:https://prakaituok.lt/renginiai/2026-kauno-kaledinis-begimas-2026/
+END:VEVENT
+END:VCALENDAR

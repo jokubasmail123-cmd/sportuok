@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:XXV tradicinis bėgimas dr. Jonui Basanavičiui atminti
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-xxv-tradicinis-begimas-dr-jonui-basanaviciu@prakaituok.lt
+DTSTAMP:20261102T182744Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:XXV tradicinis bėgimas dr. Jonui Basanavičiui atminti
+LOCATION:Bartninkai\, Vilkaviškio r.\, Lietuva
+DESCRIPTION:XXV tradicinis bėgimas dr. Jonui Basanavičiui atminti vyks 2
+ 026 m. lapkričio 12 d. (ketvirtadienį) Vilkaviškio rajone (Bartninkai)
+ . Distancijos: 5\,9 km. https://prakaituok.lt/renginiai/2026-xxv-tradicin
+ is-begimas-dr-jonui-basanaviciu/
+URL:https://prakaituok.lt/renginiai/2026-xxv-tradicinis-begimas-dr-jonui-b
+ asanaviciu/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Trakų Kalėdinis bėgimas 2026
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-traku-kaledinis-begimas-2026@prakaituok.lt
+DTSTAMP:20261102T182744Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+SUMMARY:Trakų Kalėdinis bėgimas 2026
+LOCATION:Užutrakio dvaro sodybos parkas\, Trakai\, Lietuva
+DESCRIPTION:Trakų Kalėdinis bėgimas 2026 vyks 2026 m. gruodžio 27 d. (
+ sekmadienį) Trakuose (Užutrakio dvaro sodybos parkas). Distancijos: 1 k
+ m\, 4\,5 km\, 9 km\, 13\,5 km. https://prakaituok.lt/renginiai/2026-traku
+ -kaledinis-begimas-2026/
+URL:https://prakaituok.lt/renginiai/2026-traku-kaledinis-begimas-2026/
+END:VEVENT
+END:VCALENDAR

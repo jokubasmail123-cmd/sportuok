@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:2026-trailo-kalve-ziemos-sezono-atidarymas@prakaituok.lt
-DTSTAMP:20261029T202138Z
+DTSTAMP:20261102T182744Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Trailo Kalvė – žiemos sezono atidarymas
@@ -23,7 +23,7 @@ URL:https://prakaituok.lt/renginiai/2026-trailo-kalve-ziemos-sezono-atidar
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-vilnius-trail-run@prakaituok.lt
-DTSTAMP:20261029T202138Z
+DTSTAMP:20261102T182744Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:Vilnius Trail Run
@@ -33,5 +33,31 @@ DESCRIPTION:Vilnius Trail Run vyks 2027 m. gegužės 1 d. (šeštadienį)
  m\, 70 km\, 108 km. https://prakaituok.lt/renginiai/2027-vilnius-trail-ru
  n/
 URL:https://prakaituok.lt/renginiai/2027-vilnius-trail-run/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-vertical-vilnius-2027@prakaituok.lt
+DTSTAMP:20261102T182744Z
+DTSTART;VALUE=DATE:20270926
+DTEND;VALUE=DATE:20270927
+SUMMARY:Vertical Vilnius 2027
+LOCATION:Liepkalnis\, Vilnius\, Lietuva
+DESCRIPTION:Vertical Vilnius 2027 vyks 2027 m. rugsėjo 26 d. (sekmadienį
+ ) Vilniuje (Liepkalnis). Distancijos: 2 km (200 m D+)\, 6 km (600 m D+)\,
+  10 km (1000 m D+). https://prakaituok.lt/renginiai/2027-vertical-vilnius
+ -2027/
+URL:https://prakaituok.lt/renginiai/2027-vertical-vilnius-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-trail-kursiu-nerija@prakaituok.lt
+DTSTAMP:20261102T182744Z
+DTSTART;VALUE=DATE:20271016
+DTEND;VALUE=DATE:20271017
+SUMMARY:Trail Kuršių nerija
+LOCATION:Smiltynė\, Smiltynės g. 25\, Klaipėda\, Lietuva
+DESCRIPTION:Trail Kuršių nerija vyks 2027 m. spalio 16 d. (šeštadienį
+ ) Klaipėdoje (Smiltynė\, Smiltynės g. 25). Distancijos: 1 km\, 10 km\,
+  21 km\, 30 km\, 42 km\, 50 km\, 70 km\, 104 km. https://prakaituok.lt/re
+ nginiai/2027-trail-kursiu-nerija/
+URL:https://prakaituok.lt/renginiai/2027-trail-kursiu-nerija/
 END:VEVENT
 END:VCALENDAR

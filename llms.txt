@@ -1,23 +1,23 @@
 # Prakaituok
 
-> Prakaituok (https://prakaituok.lt) – nemokamas mėgėjų sporto renginių Lietuvoje kalendorius: bėgimas, trail, dviračiai (plentas, gravel, MTB), triatlonas, plaukimas, baidarės, slidinėjimas, orientavimasis. Atnaujinama kas savaitę; paskutinį kartą 2026-10-29.
+> Prakaituok (https://prakaituok.lt) – nemokamas mėgėjų sporto renginių Lietuvoje kalendorius: bėgimas, trail, dviračiai (plentas, gravel, MTB), triatlonas, plaukimas, baidarės, slidinėjimas, orientavimasis. Atnaujinama kas savaitę; paskutinį kartą 2026-11-02.
 
-Kalendoriuje 97 artėjantys renginiai (21 su patvirtinta data). „Data tikslinama“ reiškia, kad data spėjama pagal ankstesnius metus.
+Kalendoriuje 102 artėjantys renginiai (27 su patvirtinta data). „Data tikslinama“ reiškia, kad data spėjama pagal ankstesnius metus.
 
 ## Sporto šakos
-- [Bėgimo varžybos Lietuvoje](https://prakaituok.lt/begimas/): 31 renginiai
-- [Trail bėgimo varžybos](https://prakaituok.lt/trail/): 5 renginiai
+- [Bėgimo varžybos Lietuvoje](https://prakaituok.lt/begimas/): 37 renginiai
+- [Trail bėgimo varžybos](https://prakaituok.lt/trail/): 6 renginiai
 - [Ultra bėgimai](https://prakaituok.lt/ultra/): 3 renginiai
-- [Dviračių varžybos Lietuvoje](https://prakaituok.lt/dviraciai/): 25 renginiai
+- [Dviračių varžybos Lietuvoje](https://prakaituok.lt/dviraciai/): 24 renginiai
 - [Plento dviračių renginiai](https://prakaituok.lt/plentas/): 6 renginiai
 - [Gravel lenktynės](https://prakaituok.lt/gravel/): 8 renginiai
-- [MTB varžybos](https://prakaituok.lt/mtb/): 9 renginiai
+- [MTB varžybos](https://prakaituok.lt/mtb/): 8 renginiai
 - [Cyclocross varžybos](https://prakaituok.lt/cyclocross/): 2 renginiai
 - [Triatlono varžybos Lietuvoje](https://prakaituok.lt/triatlonas/): 14 renginiai
 - [Plaukimo varžybos](https://prakaituok.lt/plaukimas/): 8 renginiai
 - [Baidarių ir SUP maratonai](https://prakaituok.lt/baidares/): 7 renginiai
 - [Slidinėjimo renginiai](https://prakaituok.lt/slidinejimas/): 7 renginiai
-- [Orientavimasis ir nuotykių lenktynės](https://prakaituok.lt/orientavimasis/): 4 renginiai
+- [Orientavimosi varžybos ir nuotykių lenktynės](https://prakaituok.lt/orientavimasis/): 4 renginiai
 - [Kliūčių ruožo lenktynės (OCR)](https://prakaituok.lt/kliuciu-ruozas/): 1 renginiai
 
 ## Miestai
@@ -25,21 +25,19 @@ Kalendoriuje 97 artėjantys renginiai (21 su patvirtinta data). „Data tikslina
 - [Renginiai Kaune](https://prakaituok.lt/miestai/kaunas/)
 - [Renginiai Druskininkuose](https://prakaituok.lt/miestai/druskininkai/)
 - [Renginiai Anykščiuose](https://prakaituok.lt/miestai/anyksciai/)
-- [Renginiai Panevėžyje](https://prakaituok.lt/miestai/panevezys/)
-- [Renginiai Ignalinoje](https://prakaituok.lt/miestai/ignalina/)
 - [Renginiai Klaipėdoje](https://prakaituok.lt/miestai/klaipeda/)
+- [Renginiai Panevėžyje](https://prakaituok.lt/miestai/panevezys/)
+- [Renginiai Trakuose](https://prakaituok.lt/miestai/trakai/)
+- [Renginiai Ignalinoje](https://prakaituok.lt/miestai/ignalina/)
 - [Renginiai Molėtuose](https://prakaituok.lt/miestai/moletai/)
-- [Renginiai Kauno rajone](https://prakaituok.lt/miestai/kauno-r/)
 - [Renginiai Jonavoje](https://prakaituok.lt/miestai/jonava/)
 - [Renginiai Nemenčinėje](https://prakaituok.lt/miestai/nemencine/)
-- [Renginiai Trakuose](https://prakaituok.lt/miestai/trakai/)
 - [Renginiai Šiauliuose](https://prakaituok.lt/miestai/siauliai/)
 - [Renginiai Kėdainiuose](https://prakaituok.lt/miestai/kedainiai/)
 - [Renginiai Alytuje](https://prakaituok.lt/miestai/alytus/)
 - [Renginiai Utenoje](https://prakaituok.lt/miestai/utena/)
 
 ## Mėnesiai
-- [Spalis 2026](https://prakaituok.lt/kalendorius/2026-10/)
 - [Lapkritis 2026](https://prakaituok.lt/kalendorius/2026-11/)
 - [Gruodis 2026](https://prakaituok.lt/kalendorius/2026-12/)
 - [Sausis 2027](https://prakaituok.lt/kalendorius/2027-01/)
