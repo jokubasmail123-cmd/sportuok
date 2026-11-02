@@ -118,6 +118,21 @@
   "source": "https://www.lbmaregistracija.lt/vilnius/nuostatai/"
  },
  {
+  "title": "XXV tradicinis bėgimas dr. Jonui Basanavičiui atminti",
+  "date": "2026-11-12",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Vilkaviškio r.",
+  "venue": "Bartninkai",
+  "distances": [
+   "5,9 km"
+  ],
+  "url": "https://www.lbmaregistracija.lt/bartninkai",
+  "status": "patvirtinta",
+  "note": "LBMA taurių turnyro 18-asis etapas.",
+  "source": "https://www.lbma.lt/puslapiai-LBMA_tauriu_turnyras_2026"
+ },
+ {
   "title": "Vilnius Rogaining 2026",
   "date": "2026-11-14",
   "endDate": null,
@@ -184,7 +199,7 @@
   "source": "https://vilniuschallenge.lt/catalog/renginiai"
  },
  {
-  "title": "Saulėtekio maratonas",
+  "title": "VIII Saulėtekio maratonas",
   "date": "2026-11-29",
   "endDate": null,
   "sport": "begimas",
@@ -192,12 +207,15 @@
   "venue": "VILNIUS TECH sporto kompleksas",
   "distances": [
    "600 m",
+   "4,2 km",
+   "12,6 km",
+   "21,1 km",
    "42,195 km"
   ],
-  "url": "https://www.ahotu.com/event/sauletekio-maratonas",
+  "url": "https://www.myrace.lt/sauletekiomaratonas",
   "status": "patvirtinta",
-  "note": "Ankstesniais metais buvo ir 4,2 / 12,6 / 21,1 km distancijos.",
-  "source": "https://www.ahotu.com/event/sauletekio-maratonas"
+  "note": "LBMA taurių turnyro 19-asis etapas.",
+  "source": "https://www.lbma.lt/puslapiai-LBMA_tauriu_turnyras_2026"
  },
  {
   "title": "Eurovaistinės Kalėdinis bėgimas",
@@ -234,6 +252,41 @@
   "status": "patvirtinta",
   "note": "Neskubus kalėdinis bėgimas be laiko tikslų.",
   "source": "https://www.euronews.com/2026/10/22/forget-the-festive-rush-take-on-europes-slowest-marathon-in-vilnius-this-christmas"
+ },
+ {
+  "title": "Kauno „Kalėdinis bėgimas“ 2026",
+  "date": "2026-12-19",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Kaunas",
+  "venue": null,
+  "distances": [
+   "1,7 km",
+   "5 km",
+   "10 km"
+  ],
+  "url": "https://www.lbma.lt/puslapiai-LBMA_tauriu_turnyras_2026",
+  "status": "patvirtinta",
+  "note": "LBMA taurių turnyro 20-asis (paskutinis) etapas. Vieta ir registracija dar skelbiamos.",
+  "source": "https://www.lbma.lt/puslapiai-LBMA_tauriu_turnyras_2026"
+ },
+ {
+  "title": "Trakų Kalėdinis bėgimas 2026",
+  "date": "2026-12-27",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Trakai",
+  "venue": "Užutrakio dvaro sodybos parkas",
+  "distances": [
+   "1 km",
+   "4,5 km",
+   "9 km",
+   "13,5 km"
+  ],
+  "url": "https://www.aktyvustrakai365.lt/stages/2/regulations",
+  "status": "patvirtinta",
+  "note": "Startas 9:00 (tikslus tvarkaraštis bus paskelbtas). Laikas fiksuojamas elektroniniu būdu; 1 km – vaikams.",
+  "source": "https://uzjudek.lt/events/traku-kaledinis-begimas-2026-d2ool"
  },
  {
   "title": "Gyvybės ir mirties keliu – pagarbos bėgimas",
@@ -784,6 +837,21 @@
   "source": "https://ldsf.ldsf.lt/calendar?year=2027"
  },
  {
+  "title": "Vilnius 5000 2027",
+  "date": "2027-06-05",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Vilnius",
+  "venue": "M. K. Čiurlionio g. 14",
+  "distances": [
+   "5 km"
+  ],
+  "url": "https://uzjudek.lt/events/vilnius-5000-2027-8bd5k",
+  "status": "patvirtinta",
+  "note": "Startas 17:00.",
+  "source": "https://uzjudek.lt/events/vilnius-5000-2027-8bd5k"
+ },
+ {
   "title": "GRUNTO #1 – Lietuvos gravel čempionatas",
   "date": "2027-06-12",
   "endDate": null,
@@ -1298,6 +1366,24 @@
   "source": "https://ltuaquatics.com/wp-content/uploads/2026/02/VK-2025-15-5_LTU-Aquatics-kalendorius_tvirtinimui.pdf"
  },
  {
+  "title": "TEMPLE Kauno pusmaratonis 2027",
+  "date": "2027-08-28",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Kaunas",
+  "venue": "Nemuno sala",
+  "distances": [
+   "400 m",
+   "5 km",
+   "10 km",
+   "21,1 km"
+  ],
+  "url": "https://templesocial.club/",
+  "status": "patvirtinta",
+  "note": "Startas 8:00; 400 m – vaikams.",
+  "source": "https://uzjudek.lt/events/temple-kauno-pusmaratonis-27-oh75u"
+ },
+ {
   "title": "Utenos velomaratonas",
   "date": "2027-08-28",
   "endDate": null,
@@ -1456,6 +1542,23 @@
   "source": "https://uzjudek.lt/events?sport=cycling"
  },
  {
+  "title": "Vertical Vilnius 2027",
+  "date": "2027-09-26",
+  "endDate": null,
+  "sport": "trail",
+  "city": "Vilnius",
+  "venue": "Liepkalnis",
+  "distances": [
+   "2 km (200 m D+)",
+   "6 km (600 m D+)",
+   "10 km (1000 m D+)"
+  ],
+  "url": "https://uzjudek.lt/events/vertical-vilnius-2027-wolpd",
+  "status": "patvirtinta",
+  "note": "Startas 10:30. Registracija bus paskelbta vėliau.",
+  "source": "https://uzjudek.lt/events/vertical-vilnius-2027-wolpd"
+ },
+ {
   "title": "Utenos hipodromo maratonas",
   "date": "2027-10-02",
   "endDate": null,
@@ -1512,9 +1615,10 @@
   "date": "2027-10-16",
   "endDate": null,
   "sport": "trail",
-  "city": "Neringa",
-  "venue": "Kuršių nerija",
+  "city": "Klaipėda",
+  "venue": "Smiltynė, Smiltynės g. 25",
   "distances": [
+   "1 km",
    "10 km",
    "21 km",
    "30 km",
@@ -1524,9 +1628,9 @@
    "104 km"
   ],
   "url": "https://www.trailkursiunerija.com/",
-  "status": "preliminari",
-  "note": "2026 m. vyko spalio 17 d.",
-  "source": "https://www.finishers.com/en/event/trail-kursiu-nerija-tkn2021"
+  "status": "patvirtinta",
+  "note": "Startas 8:00. Registracija 2027 06 01 – 09 12.",
+  "source": "https://uzjudek.lt/events/trail-kursiu-nerija-tkn2027-j6naf"
  },
  {
   "title": "VeloCX International CX Race",

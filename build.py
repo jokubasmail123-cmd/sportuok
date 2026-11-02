@@ -22,7 +22,7 @@ REG = {
  "Panevėžio kraštas":["Panevėžys","Panevėžio r.","Pasvalys","Biržai","Rokiškis","Kupiškis"],
  "Utenos kraštas":["Utena","Molėtai","Ignalina","Anykščiai","Visaginas","Zarasai","Baltieji Lakajai"],
  "Alytaus kraštas":["Alytus","Alytaus r.","Druskininkai","Varėna","Varėnos r.","Veisiejai","Lazdijai"],
- "Marijampolės kraštas":["Marijampolė","Vištytis","Vilkaviškis","Kazlų Rūdos sav.","Kalvarija","Šakiai","Gelgaudiškis"],
+ "Marijampolės kraštas":["Marijampolė","Vištytis","Vilkaviškis","Vilkaviškio r.","Kazlų Rūdos sav.","Kalvarija","Šakiai","Gelgaudiškis"],
  "Tauragės kraštas":["Tauragė","Skaudvilė","Jurbarkas","Pagėgiai"],
  "Telšių kraštas":["Telšiai","Plungė","Plungės r.","Mažeikiai","Rietavas"],
 }
