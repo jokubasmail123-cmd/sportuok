@@ -1682,5 +1682,37 @@
   "status": "preliminari",
   "note": "2026 m. vyko lapkričio 21 d.",
   "source": "https://ltuaquatics.com/wp-content/uploads/2026/10/3.6.2026-m.-Meistru-LC-trumpas.pdf"
+ },
+ {
+  "title": "Bėgimas „Taurostos ruduo“ (Jonui Verikui atminti)",
+  "date": "2026-11-14",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Jonava",
+  "venue": "Taurostos parkas",
+  "distances": [
+   "1 km",
+   "7 km",
+   "21,1 km"
+  ],
+  "url": "https://www.lbmaregistracija.lt/",
+  "status": "patvirtinta",
+  "note": "1 km startas 11:00, 7 ir 21,1 km – apie 11:30. Išankstinė registracija iki lapkričio 13 d. 18:00. Organizatorius – „Bėgimai Jonavoje“.",
+  "source": "https://uzjudek.lt/events/begimas-taurostos-ruduo-4gh64"
+ },
+ {
+  "title": "Tiesiog Maratonas #11",
+  "date": "2026-11-21",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Vilnius",
+  "venue": "Vingio parkas",
+  "distances": [
+   "42,195 km"
+  ],
+  "url": "https://www.myrace.lt/maratonadienis/",
+  "status": "patvirtinta",
+  "note": "Startas 10:00. 10 ratų po 4,22 km asfaltu, galima įveikti mažiau ratų; laiko limitas 6 val. Organizatorius – Maratomanija.",
+  "source": "https://uzjudek.lt/events/tiesiog-maratonas-11-2eynk"
  }
 ]

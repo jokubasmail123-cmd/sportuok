@@ -1,5 +1,9 @@
 # Pakeitimai
 
+## 2026-11-09
+- + Naujas: Bėgimas „Taurostos ruduo“ (Jonui Verikui atminti) – 2026-11-14, Jonava
+- + Naujas: Tiesiog Maratonas #11 – 2026-11-21, Vilnius (Vingio parkas)
+
 ## 2026-11-02
 - + Naujas: XXV tradicinis bėgimas dr. Jonui Basanavičiui atminti – 2026-11-12, Bartninkai (Vilkaviškio r.)
 - + Naujas: Kauno „Kalėdinis bėgimas“ 2026 – 2026-12-19, Kaunas
