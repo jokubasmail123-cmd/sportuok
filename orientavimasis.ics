@@ -8,20 +8,8 @@ X-WR-TIMEZONE:Europe/Vilnius
 REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
-UID:2026-vilniaus-vaiku-issukis-patalpose@prakaituok.lt
-DTSTAMP:20261102T182744Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
-SUMMARY:Vilniaus vaikų iššūkis (patalpose)
-LOCATION:Vilnius\, Lietuva
-DESCRIPTION:Vilniaus vaikų iššūkis (patalpose) vyks 2026 m. lapkričio
-  8 d. (sekmadienį) Vilniuje. Distancijos: Vaikams. https://prakaituok.lt
- /renginiai/2026-vilniaus-vaiku-issukis-patalpose/
-URL:https://prakaituok.lt/renginiai/2026-vilniaus-vaiku-issukis-patalpose/
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-vilnius-rogaining-2026@prakaituok.lt
-DTSTAMP:20261102T182744Z
+DTSTAMP:20261109T195113Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Vilnius Rogaining 2026
@@ -33,7 +21,7 @@ URL:https://prakaituok.lt/renginiai/2026-vilnius-rogaining-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-vc-trail-2026-finalinis-etapas@prakaituok.lt
-DTSTAMP:20261102T182744Z
+DTSTAMP:20261109T195113Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:VC TRAIL 2026 – finalinis etapas

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Tiesiog Maratonas #11
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-tiesiog-maratonas-11@prakaituok.lt
+DTSTAMP:20261109T195113Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Tiesiog Maratonas #11
+LOCATION:Vingio parkas\, Vilnius\, Lietuva
+DESCRIPTION:Tiesiog Maratonas #11 vyks 2026 m. lapkričio 21 d. (šeštadi
+ enį) Vilniuje (Vingio parkas). Distancijos: 42\,195 km. https://prakaitu
+ ok.lt/renginiai/2026-tiesiog-maratonas-11/
+URL:https://prakaituok.lt/renginiai/2026-tiesiog-maratonas-11/
+END:VEVENT
+END:VCALENDAR

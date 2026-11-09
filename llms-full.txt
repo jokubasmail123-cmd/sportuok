@@ -1,16 +1,12 @@
-# Prakaituok: artėjantys sporto renginiai Lietuvoje (atnaujinta 2026-11-02)
+# Prakaituok: artėjantys sporto renginiai Lietuvoje (atnaujinta 2026-11-09)
 
 ## Lapkritis 2026
-- 2026 m. lapkričio 6–7 d. (penktadienis) – Dipolio iššūkis 2026 (Baidarės / SUP, Vilnius). Distancijos: 230 km, 170 km, 75 km, 60 km. https://prakaituok.lt/renginiai/2026-dipolio-issukis-2026/
-- 2026 m. lapkričio 7 d. (šeštadienis) – Panevėžio maratonas 2026 (Bėgimas, Panevėžys). Distancijos: 3 km, 5 km, 10 km, 21,1 km, 42,195 km. https://prakaituok.lt/renginiai/2026-panevezio-maratonas-2026/
-- 2026 m. lapkričio 7 d. (šeštadienis) – Trailo Kalvė – žiemos sezono atidarymas (Trail, Kaunas). Distancijos: Žalvarinė, Plieninė ~23 km, Titaninė ~30 km. https://prakaituok.lt/renginiai/2026-trailo-kalve-ziemos-sezono-atidarymas/
-- 2026 m. lapkričio 7 d. (šeštadienis) – XVII bėgimas „Varnutės ruduo“ (Bėgimas, Jonava). Distancijos: 300 m, 3,2 km, 10 km. https://prakaituok.lt/renginiai/2026-xvii-begimas-varnutes-ruduo/
-- 2026 m. lapkričio 8 d. (sekmadienis) – Vilniaus vaikų iššūkis (patalpose) (Nuotykių lenktynės, Vilnius). Distancijos: Vaikams. https://prakaituok.lt/renginiai/2026-vilniaus-vaiku-issukis-patalpose/
-- 2026 m. lapkričio 8 d. (sekmadienis) – Vilnius 700 Ultra (Ultra, Vilnius). Distancijos: 10 km, 7×10 km estafetė, 70 km. https://prakaituok.lt/renginiai/2026-vilnius-700-ultra/
 - 2026 m. lapkričio 12 d. (ketvirtadienis) – XXV tradicinis bėgimas dr. Jonui Basanavičiui atminti (Bėgimas, Vilkaviškio r.). Distancijos: 5,9 km. https://prakaituok.lt/renginiai/2026-xxv-tradicinis-begimas-dr-jonui-basanaviciu/
+- 2026 m. lapkričio 14 d. (šeštadienis) – Bėgimas „Taurostos ruduo“ (Jonui Verikui atminti) (Bėgimas, Jonava). Distancijos: 1 km, 7 km, 21,1 km. https://prakaituok.lt/renginiai/2026-begimas-taurostos-ruduo-jonui-verikui-atmin/
 - 2026 m. lapkričio 14 d. (šeštadienis) – Vilnius Rogaining 2026 (Orientavimasis, Vilnius). Distancijos: 2 val., 4 val.. https://prakaituok.lt/renginiai/2026-vilnius-rogaining-2026/
 - 2026 m. lapkričio 15 d. (sekmadienis) – Bėgimas Lietuvos kariuomenės dienai paminėti (Bėgimas, Tauragė) – DATA TIKSLINAMA. Distancijos: 0,6 km, 6 km, 12 km. https://prakaituok.lt/renginiai/2026-begimas-lietuvos-kariuomenes-dienai-paminet/
 - 2026 m. lapkričio 21 d. (šeštadienis) – Atviras Lietuvos meistrų plaukimo čempionatas (25 m baseine) 2026 (Plaukimas, Kaunas). Distancijos: 50–200 m rungtys, 4×50 m estafetės. https://prakaituok.lt/renginiai/2026-atviras-lietuvos-meistru-plaukimo-cempionat/
+- 2026 m. lapkričio 21 d. (šeštadienis) – Tiesiog Maratonas #11 (Bėgimas, Vilnius). Distancijos: 42,195 km. https://prakaituok.lt/renginiai/2026-tiesiog-maratonas-11/
 - 2026 m. lapkričio 21 d. (šeštadienis) – VC TRAIL 2026 – finalinis etapas (Nuotykių lenktynės, Vilnius). Distancijos: ~15–20 km, ~25–30 km, ~45–50 km. https://prakaituok.lt/renginiai/2026-vc-trail-2026-finalinis-etapas/
 - 2026 m. lapkričio 29 d. (sekmadienis) – VIII Saulėtekio maratonas (Bėgimas, Vilnius). Distancijos: 600 m, 4,2 km, 12,6 km, 21,1 km, 42,195 km. https://prakaituok.lt/renginiai/2026-viii-sauletekio-maratonas/
 

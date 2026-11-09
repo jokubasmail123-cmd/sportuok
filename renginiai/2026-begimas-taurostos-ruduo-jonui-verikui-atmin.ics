@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bėgimas „Taurostos ruduo“ (Jonui Verikui atminti)
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-begimas-taurostos-ruduo-jonui-verikui-atmin@prakaituok.lt
+DTSTAMP:20261109T195113Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Bėgimas „Taurostos ruduo“ (Jonui Verikui atminti)
+LOCATION:Taurostos parkas\, Jonava\, Lietuva
+DESCRIPTION:Bėgimas „Taurostos ruduo“ (Jonui Verikui atminti) vyks 20
+ 26 m. lapkričio 14 d. (šeštadienį) Jonavoje (Taurostos parkas). Dista
+ ncijos: 1 km\, 7 km\, 21\,1 km. https://prakaituok.lt/renginiai/2026-begi
+ mas-taurostos-ruduo-jonui-verikui-atmin/
+URL:https://prakaituok.lt/renginiai/2026-begimas-taurostos-ruduo-jonui-ver
+ ikui-atmin/
+END:VEVENT
+END:VCALENDAR
