@@ -1,11 +1,11 @@
 # Prakaituok
 
-> Prakaituok (https://prakaituok.lt) – nemokamas mėgėjų sporto renginių Lietuvoje kalendorius: bėgimas, trail, dviračiai (plentas, gravel, MTB), triatlonas, plaukimas, baidarės, slidinėjimas, orientavimasis. Atnaujinama kas savaitę; paskutinį kartą 2026-11-09.
+> Prakaituok (https://prakaituok.lt) – nemokamas mėgėjų sporto renginių Lietuvoje kalendorius: bėgimas, trail, dviračiai (plentas, gravel, MTB), triatlonas, plaukimas, baidarės, slidinėjimas, orientavimasis. Atnaujinama kas savaitę; paskutinį kartą 2026-11-16.
 
-Kalendoriuje 98 artėjantys renginiai (23 su patvirtinta data). „Data tikslinama“ reiškia, kad data spėjama pagal ankstesnius metus.
+Kalendoriuje 94 artėjantys renginiai (20 su patvirtinta data). „Data tikslinama“ reiškia, kad data spėjama pagal ankstesnius metus.
 
 ## Sporto šakos
-- [Bėgimo varžybos Lietuvoje](https://prakaituok.lt/begimas/): 35 renginiai
+- [Bėgimo varžybos Lietuvoje](https://prakaituok.lt/begimas/): 32 renginiai
 - [Trail bėgimo varžybos](https://prakaituok.lt/trail/): 5 renginiai
 - [Ultra bėgimai](https://prakaituok.lt/ultra/): 2 renginiai
 - [Dviračių varžybos Lietuvoje](https://prakaituok.lt/dviraciai/): 24 renginiai
@@ -17,7 +17,7 @@ Kalendoriuje 98 artėjantys renginiai (23 su patvirtinta data). „Data tikslina
 - [Plaukimo varžybos](https://prakaituok.lt/plaukimas/): 8 renginiai
 - [Baidarių ir SUP maratonai](https://prakaituok.lt/baidares/): 6 renginiai
 - [Slidinėjimo renginiai](https://prakaituok.lt/slidinejimas/): 7 renginiai
-- [Orientavimosi varžybos ir nuotykių lenktynės](https://prakaituok.lt/orientavimasis/): 3 renginiai
+- [Orientavimosi varžybos ir nuotykių lenktynės](https://prakaituok.lt/orientavimasis/): 2 renginiai
 - [Kliūčių ruožo lenktynės (OCR)](https://prakaituok.lt/kliuciu-ruozas/): 1 renginiai
 
 ## Miestai
@@ -29,7 +29,6 @@ Kalendoriuje 98 artėjantys renginiai (23 su patvirtinta data). „Data tikslina
 - [Renginiai Trakuose](https://prakaituok.lt/miestai/trakai/)
 - [Renginiai Ignalinoje](https://prakaituok.lt/miestai/ignalina/)
 - [Renginiai Molėtuose](https://prakaituok.lt/miestai/moletai/)
-- [Renginiai Jonavoje](https://prakaituok.lt/miestai/jonava/)
 - [Renginiai Nemenčinėje](https://prakaituok.lt/miestai/nemencine/)
 - [Renginiai Šiauliuose](https://prakaituok.lt/miestai/siauliai/)
 - [Renginiai Kėdainiuose](https://prakaituok.lt/miestai/kedainiai/)
