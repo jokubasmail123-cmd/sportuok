@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Druskininkų Kalėdinis bėgimas 2026
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-druskininku-kaledinis-begimas-2026@prakaituok.lt
+DTSTAMP:20261123T180615Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Druskininkų Kalėdinis bėgimas 2026
+LOCATION:Prie Vijūnėlės tvenkinio\, Druskininkai\, Lietuva
+DESCRIPTION:Druskininkų Kalėdinis bėgimas 2026 vyks 2026 m. gruodžio 1
+ 9 d. (šeštadienį) Druskininkuose (Prie Vijūnėlės tvenkinio). Distan
+ cijos: 500 m\, 4 km\, 8 km. https://prakaituok.lt/renginiai/2026-druskini
+ nku-kaledinis-begimas-2026/
+URL:https://prakaituok.lt/renginiai/2026-druskininku-kaledinis-begimas-202
+ 6/
+END:VEVENT
+END:VCALENDAR

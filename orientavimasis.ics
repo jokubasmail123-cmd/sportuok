@@ -8,16 +8,19 @@ X-WR-TIMEZONE:Europe/Vilnius
 REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
-UID:2026-vc-trail-2026-finalinis-etapas@prakaituok.lt
-DTSTAMP:20261116T180431Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:VC TRAIL 2026 – finalinis etapas
-LOCATION:Vieta skelbiama prieš savaitę\, Vilnius\, Lietuva
-DESCRIPTION:VC TRAIL 2026 – finalinis etapas vyks 2026 m. lapkričio 21 
- d. (šeštadienį) Vilniuje (Vieta skelbiama prieš savaitę). Distancijo
- s: ~15–20 km\, ~25–30 km\, ~45–50 km. https://prakaituok.lt/rengini
- ai/2026-vc-trail-2026-finalinis-etapas/
-URL:https://prakaituok.lt/renginiai/2026-vc-trail-2026-finalinis-etapas/
+UID:2027-2027-m-lietuvos-orientavimosi-sporto-begte-@prakaituok.lt
+DTSTAMP:20261123T180615Z
+DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20270920
+SUMMARY:2027 m. Lietuvos orientavimosi sporto bėgte čempionatas (sprinta
+ s\, eliminavimo sprintas\, estafetės)
+LOCATION:Ukmergė (tiksli vieta bus paskelbta)\, Ukmergė\, Lietuva
+DESCRIPTION:2027 m. Lietuvos orientavimosi sporto bėgte čempionatas (spr
+ intas\, eliminavimo sprintas\, estafetės) vyks 2027 m. rugsėjo 18–19 
+ d. (šeštadienį) Ukmergėje (Ukmergė (tiksli vieta bus paskelbta)). Di
+ stancijos: Sprintas\, Eliminavimo sprintas\, Sprinto estafetė. https://p
+ rakaituok.lt/renginiai/2027-2027-m-lietuvos-orientavimosi-sporto-begte-/
+URL:https://prakaituok.lt/renginiai/2027-2027-m-lietuvos-orientavimosi-spo
+ rto-begte-/
 END:VEVENT
 END:VCALENDAR

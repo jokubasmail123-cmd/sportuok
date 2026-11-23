@@ -1,15 +1,16 @@
-# Prakaituok: artėjantys sporto renginiai Lietuvoje (atnaujinta 2026-11-16)
+# Prakaituok: artėjantys sporto renginiai Lietuvoje (atnaujinta 2026-11-23)
 
 ## Lapkritis 2026
-- 2026 m. lapkričio 21 d. (šeštadienis) – Atviras Lietuvos meistrų plaukimo čempionatas (25 m baseine) 2026 (Plaukimas, Kaunas). Distancijos: 50–200 m rungtys, 4×50 m estafetės. https://prakaituok.lt/renginiai/2026-atviras-lietuvos-meistru-plaukimo-cempionat/
-- 2026 m. lapkričio 21 d. (šeštadienis) – Tiesiog Maratonas #11 (Bėgimas, Vilnius). Distancijos: 42,195 km. https://prakaituok.lt/renginiai/2026-tiesiog-maratonas-11/
-- 2026 m. lapkričio 21 d. (šeštadienis) – VC TRAIL 2026 – finalinis etapas (Nuotykių lenktynės, Vilnius). Distancijos: ~15–20 km, ~25–30 km, ~45–50 km. https://prakaituok.lt/renginiai/2026-vc-trail-2026-finalinis-etapas/
 - 2026 m. lapkričio 29 d. (sekmadienis) – VIII Saulėtekio maratonas (Bėgimas, Vilnius). Distancijos: 600 m, 4,2 km, 12,6 km, 21,1 km, 42,195 km. https://prakaituok.lt/renginiai/2026-viii-sauletekio-maratonas/
 
 ## Gruodis 2026
 - 2026 m. gruodžio 5 d. (šeštadienis) – Eurovaistinės Kalėdinis bėgimas (Bėgimas, Vilnius). Distancijos: Nykštukų bėgimas, 3 km, 6 km, 12 km. https://prakaituok.lt/renginiai/2026-eurovaistines-kaledinis-begimas/
 - 2026 m. gruodžio 12–13 d. (šeštadienis) – Lėčiausias Europos maratonas (Bėgimas, Vilnius). Distancijos: 3 km, 10 km, 21 km, 42,195 km. https://prakaituok.lt/renginiai/2026-leciausias-europos-maratonas/
+- 2026 m. gruodžio 12 d. (šeštadienis) – Varėnos Kalėdinis pusmaratonis 2026 (Bėgimas, Varėna). Distancijos: 21 km. https://prakaituok.lt/renginiai/2026-varenos-kaledinis-pusmaratonis-2026/
+- 2026 m. gruodžio 19 d. (šeštadienis) – Druskininkų Kalėdinis bėgimas 2026 (Bėgimas, Druskininkai). Distancijos: 500 m, 4 km, 8 km. https://prakaituok.lt/renginiai/2026-druskininku-kaledinis-begimas-2026/
 - 2026 m. gruodžio 19 d. (šeštadienis) – Kauno „Kalėdinis bėgimas“ 2026 (Bėgimas, Kaunas). Distancijos: 1,7 km, 5 km, 10 km. https://prakaituok.lt/renginiai/2026-kauno-kaledinis-begimas-2026/
+- 2026 m. gruodžio 19 d. (šeštadienis) – Žieminis backyard Mariaus Zakarausko taurei laimėti (Ultra, Kauno r.). Distancijos: 6,7 km ratas kas valandą (backyard). https://prakaituok.lt/renginiai/2026-zieminis-backyard-mariaus-zakarausko-taurei/
+- 2026 m. gruodžio 27 d. (sekmadienis) – Bėgimas į Naujus 2027 (Bėgimas, Vilnius). Distancijos: 600 m, 5 km, 10 km, 25 km, 42,2 km. https://prakaituok.lt/renginiai/2026-begimas-i-naujus-2027/
 - 2026 m. gruodžio 27 d. (sekmadienis) – Trakų Kalėdinis bėgimas 2026 (Bėgimas, Trakai). Distancijos: 1 km, 4,5 km, 9 km, 13,5 km. https://prakaituok.lt/renginiai/2026-traku-kaledinis-begimas-2026/
 
 ## Sausis 2027
@@ -102,6 +103,7 @@
 - 2027 m. rugsėjo 4 d. (šeštadienis) – Druskininkų triatlonas (Triatlonas, Druskininkai) – DATA TIKSLINAMA. Distancijos: 1,5 / 40 / 10 km, 750 m / 20 / 5 km, TRI-FUN, Vaikų TRI. https://prakaituok.lt/renginiai/2027-druskininku-triatlonas/
 - 2027 m. rugsėjo 11 d. (šeštadienis) – Labdaringas moterų važiavimas (Plentas, Vilnius). https://prakaituok.lt/renginiai/2027-labdaringas-moteru-vaziavimas/
 - 2027 m. rugsėjo 12 d. (sekmadienis) – Swedbank Vilniaus maratonas (Bėgimas, Vilnius). Distancijos: Vaikų, 5 km, 10 km, 21,1 km, 42,195 km. https://prakaituok.lt/renginiai/2027-swedbank-vilniaus-maratonas/
+- 2027 m. rugsėjo 18–19 d. (šeštadienis) – 2027 m. Lietuvos orientavimosi sporto bėgte čempionatas (sprintas, eliminavimo sprintas, estafetės) (Orientavimasis, Ukmergė). Distancijos: Sprintas, Eliminavimo sprintas, Sprinto estafetė. https://prakaituok.lt/renginiai/2027-2027-m-lietuvos-orientavimosi-sporto-begte-/
 - 2027 m. rugsėjo 18 d. (šeštadienis) – Supermasters (25 m baseine) (Plaukimas, Kaunas) – DATA TIKSLINAMA. Distancijos: Baseino rungtys meistrams. https://prakaituok.lt/renginiai/2027-supermasters-25-m-baseine/
 - 2027 m. rugsėjo 22 d. (trečiadienis) – Šiaulių gimtadienio bėgimo šventė (Bėgimas, Šiauliai) – DATA TIKSLINAMA. Distancijos: 1236 m, 5 km, 10 km, 21,1 km. https://prakaituok.lt/renginiai/2027-siauliu-gimtadienio-begimo-svente/
 - 2027 m. rugsėjo 25 d. (šeštadienis) – LTU riedslidžių taurė – III etapas (Slidinėjimas, Ignalina) – DATA TIKSLINAMA. Distancijos: Sprintas F. https://prakaituok.lt/renginiai/2027-ltu-riedslidziu-taure-iii-etapas/

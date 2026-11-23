@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Žieminis backyard Mariaus Zakarausko taurei laimėti
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-zieminis-backyard-mariaus-zakarausko-taurei@prakaituok.lt
+DTSTAMP:20261123T180615Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Žieminis backyard Mariaus Zakarausko taurei laimėti
+LOCATION:Bėgimo namai\, Kūjagalvių k.\, Kauno r.\, Lietuva
+DESCRIPTION:Žieminis backyard Mariaus Zakarausko taurei laimėti vyks 202
+ 6 m. gruodžio 19 d. (šeštadienį) Kauno rajone (Bėgimo namai\, Kūjag
+ alvių k.). Distancijos: 6\,7 km ratas kas valandą (backyard). https://p
+ rakaituok.lt/renginiai/2026-zieminis-backyard-mariaus-zakarausko-taurei/
+URL:https://prakaituok.lt/renginiai/2026-zieminis-backyard-mariaus-zakarau
+ sko-taurei/
+END:VEVENT
+END:VCALENDAR

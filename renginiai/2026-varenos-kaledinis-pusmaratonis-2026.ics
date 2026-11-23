@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Varėnos Kalėdinis pusmaratonis 2026
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-varenos-kaledinis-pusmaratonis-2026@prakaituok.lt
+DTSTAMP:20261123T180615Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Varėnos Kalėdinis pusmaratonis 2026
+LOCATION:J. Basanavičiaus g. 2A\, Varėna\, Lietuva
+DESCRIPTION:Varėnos Kalėdinis pusmaratonis 2026 vyks 2026 m. gruodžio 1
+ 2 d. (šeštadienį) Varėna (J. Basanavičiaus g. 2A). Distancijos: 21 k
+ m. https://prakaituok.lt/renginiai/2026-varenos-kaledinis-pusmaratonis-20
+ 26/
+URL:https://prakaituok.lt/renginiai/2026-varenos-kaledinis-pusmaratonis-20
+ 26/
+END:VEVENT
+END:VCALENDAR

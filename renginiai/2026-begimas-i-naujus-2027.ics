@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Prakaituok//LT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bėgimas į Naujus 2027
+X-WR-TIMEZONE:Europe/Vilnius
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:2026-begimas-i-naujus-2027@prakaituok.lt
+DTSTAMP:20261123T180615Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+SUMMARY:Bėgimas į Naujus 2027
+LOCATION:Vingio parkas (prie estrados)\, Vilnius\, Lietuva
+DESCRIPTION:Bėgimas į Naujus 2027 vyks 2026 m. gruodžio 27 d. (sekmadie
+ nį) Vilniuje (Vingio parkas (prie estrados)). Distancijos: 600 m\, 5 km\
+ , 10 km\, 25 km\, 42\,2 km. https://prakaituok.lt/renginiai/2026-begimas-
+ i-naujus-2027/
+URL:https://prakaituok.lt/renginiai/2026-begimas-i-naujus-2027/
+END:VEVENT
+END:VCALENDAR
