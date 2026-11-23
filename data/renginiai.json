@@ -1714,5 +1714,88 @@
   "status": "patvirtinta",
   "note": "Startas 10:00. 10 ratų po 4,22 km asfaltu, galima įveikti mažiau ratų; laiko limitas 6 val. Organizatorius – Maratomanija.",
   "source": "https://uzjudek.lt/events/tiesiog-maratonas-11-2eynk"
+ },
+ {
+  "title": "Varėnos Kalėdinis pusmaratonis 2026",
+  "date": "2026-12-12",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Varėna",
+  "venue": "J. Basanavičiaus g. 2A",
+  "distances": [
+   "21 km"
+  ],
+  "url": "https://uzjudek.lt/events/varenos-kaledinis-pusmaratonis-2026-unx6a",
+  "status": "patvirtinta",
+  "note": "Startas 9:00. Organizatorius – Varėnos sporto centras.",
+  "source": "https://uzjudek.lt/events/varenos-kaledinis-pusmaratonis-2026-unx6a"
+ },
+ {
+  "title": "Žieminis backyard Mariaus Zakarausko taurei laimėti",
+  "date": "2026-12-19",
+  "endDate": null,
+  "sport": "ultra",
+  "city": "Kauno r.",
+  "venue": "Bėgimo namai, Kūjagalvių k.",
+  "distances": [
+   "6,7 km ratas kas valandą (backyard)"
+  ],
+  "url": "https://www.lbma.lt/registracija/begimonamai",
+  "status": "patvirtinta",
+  "note": "Backyard formatas, startas 11:00. Dalyvavimas nemokamas.",
+  "source": "https://uzjudek.lt/events/zieminis-backyard-mariaus-zakarausko-taurei-laimeti-bqo35"
+ },
+ {
+  "title": "Druskininkų Kalėdinis bėgimas 2026",
+  "date": "2026-12-19",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Druskininkai",
+  "venue": "Prie Vijūnėlės tvenkinio",
+  "distances": [
+   "500 m",
+   "4 km",
+   "8 km"
+  ],
+  "url": "https://sportorenginiai.lt/registracija/124",
+  "status": "patvirtinta",
+  "note": "4 ir 8 km startas 12:00, laikas nematuojamas. Kalėdiniu kostiumu – nemokamai. Limitas 100 dalyvių.",
+  "source": "https://uzjudek.lt/events/druskininku-kaledinis-begimas-2026-b5vpc"
+ },
+ {
+  "title": "Bėgimas į Naujus 2027",
+  "date": "2026-12-27",
+  "endDate": null,
+  "sport": "begimas",
+  "city": "Vilnius",
+  "venue": "Vingio parkas (prie estrados)",
+  "distances": [
+   "600 m",
+   "5 km",
+   "10 km",
+   "25 km",
+   "42,2 km"
+  ],
+  "url": "https://www.myrace.lt/naujimetai/",
+  "status": "patvirtinta",
+  "note": "Maratono startas 9:30. Registracija iki 12-25 12:00. Organizatorius – VšĮ „Maratomanija“.",
+  "source": "https://www.myrace.lt/naujimetai/nuostatai/"
+ },
+ {
+  "title": "2027 m. Lietuvos orientavimosi sporto bėgte čempionatas (sprintas, eliminavimo sprintas, estafetės)",
+  "date": "2027-09-18",
+  "endDate": "2027-09-19",
+  "sport": "orientavimasis",
+  "city": "Ukmergė",
+  "venue": "Ukmergė (tiksli vieta bus paskelbta)",
+  "distances": [
+   "Sprintas",
+   "Eliminavimo sprintas",
+   "Sprinto estafetė"
+  ],
+  "url": "https://orienteering.lt/2027-m-lietuvos-os-begte-cempionatas-sprinto-eliminavimo-sprinto-ir-sprinto-estafeciu-trasose",
+  "status": "patvirtinta",
+  "note": "Organizatoriai – OK „Fortūna“. Starto vieta ir registracijos sąlygos dar nepaskelbtos.",
+  "source": "https://uzjudek.lt/events/2027-m-lietuvos-os-begte-cempionatas-sprinto-eliminavimo-sprinto-ir-sprinto-estafeciu-trasose-vgv1b"
  }
 ]

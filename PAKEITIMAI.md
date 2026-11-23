@@ -1,5 +1,12 @@
 # Pakeitimai
 
+## 2026-11-23
+- + Naujas: Varėnos Kalėdinis pusmaratonis 2026 – 2026-12-12, Varėna
+- + Naujas: Žieminis backyard Mariaus Zakarausko taurei laimėti – 2026-12-19, Kauno r. (Bėgimo namai, Kūjagalviai)
+- + Naujas: Druskininkų Kalėdinis bėgimas 2026 – 2026-12-19, Druskininkai
+- + Naujas: Bėgimas į Naujus 2027 – 2026-12-27, Vilnius (Vingio parkas)
+- + Naujas: 2027 m. Lietuvos OS bėgte čempionatas (sprintai, estafetės) – 2027-09-18–19, Ukmergė
+
 ## 2026-11-09
 - + Naujas: Bėgimas „Taurostos ruduo“ (Jonui Verikui atminti) – 2026-11-14, Jonava
 - + Naujas: Tiesiog Maratonas #11 – 2026-11-21, Vilnius (Vingio parkas)
